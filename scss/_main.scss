@@ -11,6 +11,10 @@
   padding-bottom: 2px;
 }
 
+#content-wrapper {
+  background: $color-window-background;
+}
+
 .border-right {
   border-right: none !important;
 }
@@ -94,6 +98,7 @@ a {
   }
 }
 
+#header,
 .Header {
   @include window-header;
   /* use border instead of margin because body background is not gray */

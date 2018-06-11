@@ -40,7 +40,7 @@
 
 @mixin window-header {
   background: linear-gradient(to right, $color-header-left, $color-header-right);
-  color: $color-header-text;
+  color: $color-header-text !important;
   border-radius: 0;
 }
 

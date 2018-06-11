@@ -9,6 +9,7 @@
                domain("githubusercontent.com") {
   body {
     width: 65vw;
+    height: auto;
     margin: 0 auto;
     background-color: #007b7b !important;
     color: #000000;
@@ -189,6 +190,8 @@
   .application-main {
     background-color: #bdbdbd;
     padding-bottom: 2px; }
+  #content-wrapper {
+    background: #bdbdbd; }
   .border-right {
     border-right: none !important; }
   .border-bottom {
@@ -233,9 +236,10 @@
     border: none !important; }
   .repository-content .container {
     width: 100%; }
+  #header,
   .Header {
     background: linear-gradient(to right, #10276d, #a5ccf7);
-    color: #ffffff;
+    color: #ffffff !important;
     border-radius: 0;
     /* use border instead of margin because body background is not gray */
     border: 2px solid #bdbdbd; }
@@ -258,7 +262,7 @@
     padding: 4px; }
   .readme h3 {
     background: linear-gradient(to right, #10276d, #a5ccf7);
-    color: #ffffff;
+    color: #ffffff !important;
     border-radius: 0;
     border: none;
     margin-bottom: 3px; }
