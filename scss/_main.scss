@@ -1,0 +1,221 @@
+@import 'variables';
+@import 'mixins';
+@import 'body';
+@import 'wiki';
+@import 'icons';
+@import 'borders';
+@import 'footer';
+
+.application-main {
+  background-color: $color-window-background;
+  padding-bottom: 2px;
+}
+
+.border-right {
+  border-right: none !important;
+}
+
+.border-bottom {
+  border-bottom: none !important;
+}
+
+.border-top {
+  border-top: none !important;
+}
+
+.border-left {
+  border-left: none !important;
+}
+
+.Box-row {
+  border: none !important;
+  background: none !important;
+}
+
+.file .data {
+  padding: 4px;
+}
+
+.reponav-item {
+  border-width: 2px;
+  position: relative;
+  bottom: 1px;
+  color: $color-text;
+  text-decoration: none !important;
+}
+
+.reponav-item.selected {
+  bottom: 4px;
+  height: 35px;
+  margin-bottom: -5px;
+}
+
+.repohead, .repohead.experiment-repo-nav {
+  background-color: $color-window-background;
+  border: none;
+  margin-bottom: 0;
+}
+
+
+a {
+  color: $color-link;
+  text-decoration: underline;
+}
+
+
+.file {
+  border: none !important;
+}
+
+.timeline-comment {
+  &::before {
+    display: none;
+  }
+
+  background: none !important;
+}
+
+.timeline-comment-avatar {
+  padding: 10px;
+}
+
+.comment-form-head {
+  background: none !important;
+}
+
+.timeline-comment {
+  border: none !important;
+}
+
+
+.repository-content {
+  .container {
+    width: 100%;
+  }
+}
+
+.Header {
+  @include window-header;
+  /* use border instead of margin because body background is not gray */
+  border: 2px solid $color-window-background;
+}
+
+.header-search-key-slash {
+  display: none;
+}
+
+.HeaderNavlink {
+  color: $color-header-text;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0 12px;
+  line-height: 1.2em;
+}
+
+.topic-tag {
+  background: transparent;
+  padding: 0.3em;
+}
+
+.files {
+  border-collapse: separate;
+}
+
+.boxed-group {
+  padding: 4px;
+}
+
+.readme {
+  h3 {
+    @include window-header;
+    border: none;
+    margin-bottom: 3px;
+  }
+
+  .octicon {
+    vertical-aligh: bottom;
+    max-width: 16px;
+    max-height: 16px;
+  }
+}
+
+.markdown-body {
+  margin: 0 !important;
+}
+
+.reponav-item svg {
+  display: none;
+}
+
+.Counter {
+  background: transparent !important;
+  color: $color-text !important;
+  &::before {
+    content: '(';
+  }
+  &::after {
+    content: ')';
+  }
+}
+
+.repository-content {
+  padding: 15px;
+}
+
+.stats-switcher-viewport {
+  height: 52px;
+}
+
+.numbers-summary a {
+  height: 52px;
+  color: $color-text;
+}
+
+.repository-lang-stats {
+  height: 52px;
+}
+
+.file-wrap {
+  border: none;
+}
+
+.commit-tease {
+  padding: 5px 15px;
+  margin-bottom: 4px;
+  color: $color-text;
+
+  a {
+    color: $color-link;
+  }
+}
+
+#discussion_bucket {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.discussion-timeline-actions {
+  background: none !important;
+}
+
+.discussion-timeline {
+  width: auto;
+  float: none;
+  flex-grow: 1;
+  position: static;
+  margin-right: 10px;
+}
+
+.tabnav,
+.discussion-timeline-actions,
+.timeline-comment-header,
+.timeline-comment-wrapper {
+  border-top: none;
+  border-bottom: none;
+}
+
+.timeline-new-comment .comment-form-head {
+  margin-bottom: 0;
+}

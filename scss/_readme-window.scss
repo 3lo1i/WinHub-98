@@ -1,0 +1,12 @@
+/* This file is optional.
+ * It detaches readme section from parent container and makes it look like
+ * separate window.
+ */
+
+.readme {
+  position: absolute;
+  left: 10vw;
+  margin-bottom: 40px;
+  margin-top: 100px;
+  right: 30vw;
+}

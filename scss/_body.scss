@@ -1,0 +1,11 @@
+@import 'variables';
+@import 'mixins';
+
+body {
+  width: 65vw;
+  margin: 0 auto;
+  background-color: $color-desktop-background !important;
+  color: $color-text;
+  padding: 2px;
+  margin-bottom: 40px;
+}

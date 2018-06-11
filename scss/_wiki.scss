@@ -1,0 +1,10 @@
+@import 'variables';
+@import 'mixins';
+
+.wiki-empty-box, .wiki-empty-box:hover {
+  color: $color-text !important;
+  border: 1px dotted $color-text !important;
+  border-radius: 0 !important;
+  text-decoration: none;
+  transistion: none;
+}

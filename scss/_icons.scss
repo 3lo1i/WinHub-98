@@ -1,0 +1,37 @@
+@import 'mixins';
+
+.octicon-history {
+  @include icon-commits;
+}
+
+.octicon-git-branch {
+  @include icon-branches;
+}
+
+.octicon-tag {
+  @include icon-releases;
+}
+
+.octicon-organization {
+  @include icon-contributors;
+}
+
+.octicon-law {
+  @include icon-law;
+}
+
+.octicon-question {
+  @include icon-question;
+}
+
+.octicon-file-directory {
+  @include icon-directory;
+}
+
+.octicon-file {
+  @include icon-file;
+}
+
+.octicon-book {
+  @include icon-readme;
+}

@@ -1,0 +1,36 @@
+{
+  "name": "github-98",
+  "version": "1.0.0",
+  "description": "A userstyle for github.com",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx gulp build",
+    "watch": "npx gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3lo1i/WinHub-98.git"
+  },
+  "keywords": [
+    "userstyle",
+    "github",
+    "windows-98",
+    "microsoft",
+    "sass",
+    "css",
+    "stylish",
+    "retro"
+  ],
+  "author": "3lo1i",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/3lo1i/github-98/issues"
+  },
+  "homepage": "https://github.com/3lo1i/github-98#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.3",
+    "gulp-sass": "^4.0.1"
+  }
+}

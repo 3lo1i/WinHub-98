@@ -1,0 +1,137 @@
+@import 'variables';
+
+@mixin bitmap-border($border-url) {
+  border-image: url($border-url) 2 !important;
+  border-image-slice: 2 !important;
+  border-image-width: 2px !important;
+  border-image-outset: 0 !important;
+  border-image-repeat: stretch !important;
+  border-radius: 0 !important;
+}
+
+@mixin tab-border {
+  @include bitmap-border($url-tab-border);
+}
+
+@mixin tab {
+  @include tab-border;
+  background-color: $color-window-background !important;
+  padding: 0 5px 5px;
+}
+
+@mixin tab-container-border {
+  @include bitmap-border($url-tab-container-border);
+}
+
+@mixin tab-container {
+  @include tab-container-border;
+  background-color: $color-window-background !important;
+  padding: 0 5px 5px;
+}
+
+@mixin window-border {
+  @include bitmap-border($url-window-border);
+}
+
+@mixin window {
+  @include window-border;
+  background-color: $color-window-background !important;
+}
+
+@mixin window-header {
+  background: linear-gradient(to right, $color-header-left, $color-header-right);
+  color: $color-header-text;
+  border-radius: 0;
+}
+
+@mixin input-border {
+  @include bitmap-border($url-input-border);
+}
+
+@mixin input {
+  @include input-border;
+  background-color: $color-input-background !important;
+}
+
+@mixin button-border {
+  @include bitmap-border($url-button-border);
+}
+
+@mixin button {
+  @include button-border;
+  background-color: $color-window-background !important;
+  color: $color-text !important;
+  background-image: none !important;
+  text-decoration: none;
+}
+
+@mixin toolbar-border {
+  @include bitmap-border($url-toolbar-border);
+}
+
+@mixin toolbar {
+  @include toolbar-border;
+  background-color: $color-window-background !important;
+}
+
+@mixin toolbar-grip {
+  background: url($url-toolbar-grip);
+}
+
+@mixin statusbar {
+  border: 1px solid;
+  border-top-color: #82838a;
+  border-left-color: #82838a;
+  border-bottom-color: #ffffff;
+  border-right-color: #ffffff;
+}
+
+@mixin statusbar-grip {
+  background-image: url($url-statusbar-grip);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+@mixin octicon-replace($url, $w, $h) {
+  background: url($url);
+  width: $w;
+  height: $h;
+  color: transparent !important;
+  vertical-align: middle;
+}
+
+@mixin icon-branches {
+  @include octicon-replace($url-icon-branches, 32px, 32px);
+}
+
+@mixin icon-commits {
+  @include octicon-replace($url-icon-commits, 32px, 32px);
+}
+
+@mixin icon-contributors {
+  @include octicon-replace($url-icon-contributors, 32px, 32px);
+}
+
+@mixin icon-releases {
+  @include octicon-replace($url-icon-releases, 32px, 32px);
+}
+
+@mixin icon-law {
+  @include octicon-replace($url-icon-law, 32px, 32px);
+}
+
+@mixin icon-question {
+  @include octicon-replace($url-icon-question, 16px, 16px);
+}
+
+@mixin icon-file {
+  @include octicon-replace($url-icon-file, 16px, 16px);
+}
+
+@mixin icon-directory {
+  @include octicon-replace($url-icon-directory, 16px, 16px);
+}
+
+@mixin icon-readme {
+  @include octicon-replace($url-icon-readme, 16px, 16px);
+}

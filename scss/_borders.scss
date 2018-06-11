@@ -1,0 +1,60 @@
+/* Border images are encoded as base64, therefore urls have big length.
+ * Use only one @include for each mixin to minimize resulting file size.
+ */
+
+.tabnav-tab,
+.reponav-item {
+  @include tab;
+}
+
+.table-list-header,
+.timeline-comment-header,
+.file-header,
+.commit-tease {
+  @include toolbar;
+}
+.repository-content {
+  @include tab-container;
+}
+
+.btn, .bth:hover,
+.pagination span, .pagination a, .pagination em, .pagination a:hover,
+.subnav-links a, .subnav-links a:hover,
+.social-count, .social-cont:hover {
+  @include button;
+}
+
+.header-search-input,
+.files,
+.blankslate,
+.overall-summary,
+.markdown-body,
+input[type='text'],
+textarea,
+.file .data,
+.list-topics-container,
+.js-navigation-container,
+.commit-tease-contributors,
+.repository-lang-stats-graph {
+  @include input;
+}
+
+body,
+.timeline-new-comment,
+.boxed-group {
+  @include window-border;
+}
+
+.timeline-new-comment,
+.boxed-group {
+  background-color: $color-window-background !important;
+}
+
+hr {
+  border: 1px solid;
+  border-top-color: $color-border-dark;
+  border-bottom-color: $color-border-light;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  height: 0;
+}

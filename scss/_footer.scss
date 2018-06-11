@@ -1,0 +1,38 @@
+.footer {
+  background-color: $color-window-background;
+  margin: 0;
+  padding: 2px !important;
+  max-width: none !important;
+
+  div {
+    margin: 0 !important;
+  }
+
+  & > :nth-child(1) {
+    padding: 0 !important;
+    border: none !important;
+    justify-content: stretch !important;
+
+    ul {
+      @include statusbar;
+      padding: 0 5px !important;
+      margin: 2px;
+
+      &:nth-child(1) {
+        flex-grow: 1;
+      }
+    }
+  }
+
+  .text-gray {
+    color: $color-text !important;
+  }
+
+  .footer-octicon {
+    display: none !important;
+  }
+
+  & > :nth-child(2) {
+    display: none !important;
+  }
+}
