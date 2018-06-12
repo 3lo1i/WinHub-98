@@ -35,3 +35,27 @@
 .octicon-book {
   @include icon-readme;
 }
+
+.octicon-repo {
+  @include icon-repository;
+}
+
+.octicon-trashcan {
+  @include icon-trash;
+}
+
+.octicon-pencil {
+  @include icon-pencil;
+}
+
+.octicon-bell {
+  @include icon-bell;
+}
+
+.octicon-plus {
+  @include icon-create;
+}
+
+.octicon-mark-github {
+  @include icon-globe;
+}

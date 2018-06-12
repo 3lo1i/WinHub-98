@@ -136,6 +136,30 @@
   @include octicon-replace($url-icon-readme, 16px, 16px);
 }
 
+@mixin icon-repository {
+  @include octicon-replace($url-icon-repository, 16px, 16px);
+}
+
+@mixin icon-trash {
+  @include octicon-replace($url-icon-trash, 16px, 16px);
+}
+
+@mixin icon-pencil {
+  @include octicon-replace($url-icon-pencil, 16px, 16px);
+}
+
+@mixin icon-create {
+  @include octicon-replace($url-icon-create, 16px, 16px);
+}
+
+@mixin icon-bell {
+  @include octicon-replace($url-icon-bell, 16px, 16px);
+}
+
+@mixin icon-globe {
+  @include octicon-replace($url-icon-globe, 32px, 32px);
+}
+
 @mixin m-0 {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
