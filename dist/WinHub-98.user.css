@@ -189,7 +189,10 @@
   .timeline-comment-header,
   .file-header,
   .tag-input,
+  .pr-toolbar,
+  .branch-infobar,
   .auth-form-body,
+  .drag-and-drop,
   .commit-tease {
     border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAIAAAACUFjqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4QgLDzAOxR/yjgAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAAtSURBVBjTY6yurmbADVgYGBhaWlqwytXU1LBAWPv27cOqgokBLxjE0oz4gwUAIPsIM3buTOMAAAAASUVORK5CYII=") 2 !important;
     border-image-slice: 2 !important;
@@ -198,10 +201,13 @@
     border-image-repeat: stretch !important;
     border-radius: 0 !important;
     background-color: #bdbdbd !important; }
+  .tabnav ~ .is-visible,
   .UnderlineNav + .position-relative,
   .tabnav + .gutter,
   .tabnav + .follow-list,
   .tabnav + .blankslate,
+  .timeline-comment .write-content,
+  .timeline-comment .preview-content,
   .repository-content {
     border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAQUlEQVQIHWP8DwQMWAAjIyMDC0j8wYMHKNILFy4E88GSINbDhw9RFIA4TBgiSAJ4JcHGwuxA0gRmMgJJrK4FyQIA4UcOGkQo9UIAAAAASUVORK5CYII=") 2 !important;
     border-image-slice: 2 !important;
@@ -256,6 +262,7 @@
   input[type='password'],
   input[type='search'],
   textarea,
+  .Box,
   .pinned-repo-item,
   .js-contribution-graph > .border,
   .profile-timeline-card,
@@ -289,6 +296,21 @@
     border-left-color: transparent;
     border-right-color: transparent;
     height: 0; }
+  .gh-header-meta,
+  .Box-header,
+  .gh-header.pull .gh-header-meta,
+  .Subhead {
+    border-bottom: 1px solid #7b7b7b;
+    box-shadow: 0px 1px 0px 0px #ffffff; }
+  .discussion-sidebar-item + .discussion-sidebar-item,
+  .discussion-item + .discussion-item,
+  .discussion-item-review + .discussion-item {
+    border-top: 1px solid #ffffff;
+    box-shadow: 0px -1px 0px 0px #7b7b7b; }
+  .reaction-summary-item,
+  .comment-reactions .add-reaction-btn {
+    border-right: 1px solid #7b7b7b;
+    box-shadow: 1px 0px 0px 0px #ffffff; }
   .footer {
     background-color: #bdbdbd;
     margin: 0;
@@ -334,27 +356,39 @@
     border-left: none !important; }
   .btn:focus {
     box-shadow: none !important; }
-  .text-gray-dark,
-  .text-gray,
-  .note,
-  .menu-item.selected
-.summary-stats,
-  .summary-stats li a,
+  .auth-form-header,
+  .author,
+  .branch-infobar,
+  .commit-icon,
+  .discussion-item .author,
+  .discussion-item-header,
+  .discussion-sidebar-heading,
+  .discussion-sidebar-item,
+  .drag-and-drop,
+  .gh-header-meta,
+  .gh-header-number,
   .header-logo,
+  .menu-item.selected
+.note,
+  .reponav-item.selected,
+  .summary-stats li a,
+  .summary-stats,
+  .text-gray,
+  .text-gray-dark,
+  .timeline-comment-header,
   .UnderlineNav-item,
   .UnderlineNav-item.selected,
-  .reponav-item.selected,
-  table.files td.message a,
-  table.files td.age,
   .user-profile-bio,
   .vcard-username,
-  .auth-form-header {
+  table.files td.age,
+  table.files td.message a {
     color: #000000 !important; }
   .menu,
   .timeline-comment {
     border: none !important; }
   .bg-white,
   .comment-form-head,
+  .thread-subscription-status,
   .discussion-timeline-actions {
     background: none !important; }
   .js-repo-topics-form-toggle {
@@ -366,12 +400,14 @@
     margin-bottom: 0; }
   .UnderlineNav-item,
   .tabnav-tab,
+  .tabnav-pr .tabnav-tab,
   .reponav-item {
     border-width: 2px;
     position: relative;
     bottom: 1px;
     color: #000000;
-    text-decoration: none !important; }
+    text-decoration: none !important;
+    padding: 0 5px 5px; }
   .UnderlineNav-item.selected,
   .tabnav-tab.selected,
   .reponav-item.selected {
@@ -409,6 +445,9 @@
     background-color: #bdbdbd;
     border: none;
     margin-bottom: 0; }
+  .commit-id:hover, .commit-id,
+  .timeline-commits .commit-message > code a,
+  .timeline-commits .commit-message > code a:hover,
   a, a:hover {
     color: #0000ff;
     text-decoration: underline; }
@@ -419,10 +458,11 @@
     text-decoration: underline; }
   .file {
     border: none !important; }
+  .timeline-comment::after,
+  .timeline-comment::before {
+    display: none !important; }
   .timeline-comment {
     background: none !important; }
-    .timeline-comment::before {
-      display: none; }
   .timeline-comment-avatar {
     padding: 10px; }
   .repository-content .container {
@@ -451,7 +491,7 @@
     border-collapse: separate; }
   .boxed-group {
     padding: 4px; }
-  .readme h3 {
+  .readme > h3 {
     background: linear-gradient(to right, #10276d, #a5ccf7);
     color: #ffffff !important;
     border-radius: 0;
@@ -504,9 +544,24 @@
   .timeline-comment-wrapper {
     border-top: none;
     border-bottom: none; }
+  .timeline-new-comment {
+    padding-top: 10px; }
   #repos h2 {
     margin: 10px 0; }
   .topic-tag {
     font-weight: bold; }
   .pinned-repo-item {
-    width: calc(50% - 10px); } }
+    width: calc(50% - 10px); }
+  .Box-header {
+    border-top: none;
+    background: none;
+    border-right: none;
+    border-left: none;
+    margin: 0 10px; }
+  .protip {
+    margin: 0;
+    padding: 20px 0; }
+  .pr-toolbar {
+    margin: 0; }
+  .gh-header.pull .gh-header-meta {
+    padding-bottom: 5px; } }

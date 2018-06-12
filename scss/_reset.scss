@@ -18,21 +18,33 @@
   box-shadow: none !important;
 }
 
-.text-gray-dark,
-.text-gray,
-.note,
-.menu-item.selected
-.summary-stats,
-.summary-stats li a,
+.auth-form-header,
+.author,
+.branch-infobar,
+.commit-icon,
+.discussion-item .author,
+.discussion-item-header,
+.discussion-sidebar-heading,
+.discussion-sidebar-item,
+.drag-and-drop,
+.gh-header-meta,
+.gh-header-number,
 .header-logo,
+.menu-item.selected
+.note,
+.reponav-item.selected,
+.summary-stats li a,
+.summary-stats,
+.text-gray,
+.text-gray-dark,
+.timeline-comment-header,
 .UnderlineNav-item,
 .UnderlineNav-item.selected,
-.reponav-item.selected,
-table.files td.message a,
-table.files td.age,
 .user-profile-bio,
 .vcard-username,
-.auth-form-header {
+table.files td.age,
+table.files td.message a
+{
   color: $color-text !important;
 }
 
@@ -43,6 +55,7 @@ table.files td.age,
 
 .bg-white,
 .comment-form-head,
+.thread-subscription-status,
 .discussion-timeline-actions {
   background: none !important;
 }

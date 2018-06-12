@@ -13,15 +13,21 @@
 .timeline-comment-header,
 .file-header,
 .tag-input,
+.pr-toolbar,
+.branch-infobar,
 .auth-form-body,
+.drag-and-drop,
 .commit-tease {
   @include toolbar;
 }
 
+.tabnav ~ .is-visible,
 .UnderlineNav + .position-relative,
 .tabnav + .gutter,
 .tabnav + .follow-list,
 .tabnav + .blankslate,
+.timeline-comment .write-content,
+.timeline-comment .preview-content,
 .repository-content {
   @include tab-container;
 }
@@ -56,6 +62,7 @@ input[type='url'],
 input[type='password'],
 input[type='search'],
 textarea,
+.Box,
 .pinned-repo-item,
 .js-contribution-graph > .border,
 .profile-timeline-card,
@@ -84,4 +91,25 @@ hr {
   border-left-color: transparent;
   border-right-color: transparent;
   height: 0;
+}
+
+.gh-header-meta,
+.Box-header,
+.gh-header.pull .gh-header-meta,
+.Subhead {
+  border-bottom: 1px solid #7b7b7b;
+  box-shadow: 0px 1px 0px 0px #ffffff;  
+}
+
+.discussion-sidebar-item + .discussion-sidebar-item,
+.discussion-item + .discussion-item,
+.discussion-item-review + .discussion-item {
+  border-top: 1px solid #ffffff;
+  box-shadow: 0px -1px 0px 0px #7b7b7b;  
+}
+
+.reaction-summary-item,
+.comment-reactions .add-reaction-btn {  
+  border-right: 1px solid #7b7b7b;
+  box-shadow: 1px 0px 0px 0px #ffffff;  
 }

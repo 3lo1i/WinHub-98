@@ -8,12 +8,14 @@
 
 .UnderlineNav-item,
 .tabnav-tab,
+.tabnav-pr .tabnav-tab,
 .reponav-item {
   border-width: 2px;
   position: relative;
   bottom: 1px;
   color: $color-text;
   text-decoration: none !important;
+  padding: 0 5px 5px;
 }
 
 .UnderlineNav-item.selected,

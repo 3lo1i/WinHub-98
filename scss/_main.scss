@@ -38,7 +38,9 @@
   margin-bottom: 0;
 }
 
-
+.commit-id:hover, .commit-id,
+.timeline-commits .commit-message > code a,
+.timeline-commits .commit-message > code a:hover,
 a, a:hover, {
   color: $color-link;
   text-decoration: underline;
@@ -55,11 +57,12 @@ a.link-gray, a.link-gray:hover {
   border: none !important;
 }
 
-.timeline-comment {
-  &::before {
-    display: none;
-  }
+.timeline-comment::after,
+.timeline-comment::before {
+  display: none !important;
+}
 
+.timeline-comment {
   background: none !important;
 }
 
@@ -109,7 +112,7 @@ a.link-gray, a.link-gray:hover {
 }
 
 .readme {
-  h3 {
+  & > h3 {
     @include window-header;
     border: none;
     margin-bottom: 3px;
@@ -193,6 +196,10 @@ a.link-gray, a.link-gray:hover {
   border-bottom: none;
 }
 
+.timeline-new-comment {
+  padding-top: 10px;
+}
+
 #repos h2 {
   margin: 10px 0;
 }
@@ -203,4 +210,25 @@ a.link-gray, a.link-gray:hover {
 
 .pinned-repo-item {
   width: calc(50% - 10px);
+}
+
+.Box-header {
+  border-top: none;
+  background: none;
+  border-right: none;
+  border-left: none;
+  margin: 0 10px;
+}
+
+.protip {
+  margin: 0;
+  padding: 20px 0;
+}
+
+.pr-toolbar {
+  margin: 0;
+}
+
+.gh-header.pull .gh-header-meta {
+  padding-bottom: 5px;
 }
