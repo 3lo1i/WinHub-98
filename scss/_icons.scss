@@ -1,61 +1,61 @@
 @import 'mixins';
 
-.octicon-history {
+svg.octicon.octicon-history {
   @include icon-commits;
 }
 
-.octicon-git-branch {
+svg.octicon.octicon-git-branch {
   @include icon-branches;
 }
 
-.octicon-tag {
+svg.octicon.octicon-tag {
   @include icon-releases;
 }
 
-.octicon-organization {
+svg.octicon.octicon-organization {
   @include icon-contributors;
 }
 
-.octicon-law {
+svg.octicon.octicon-law {
   @include icon-law;
 }
 
-.octicon-question {
+svg.octicon.octicon-question {
   @include icon-question;
 }
 
-.octicon-file-directory {
+svg.octicon.octicon-file-directory {
   @include icon-directory;
 }
 
-.octicon-file {
+svg.octicon.octicon-file {
   @include icon-file;
 }
 
-.octicon-book {
+svg.octicon.octicon-book {
   @include icon-readme;
 }
 
-.octicon-repo {
+svg.octicon.octicon-repo {
   @include icon-repository;
 }
 
-.octicon-trashcan {
+svg.octicon.octicon-trashcan {
   @include icon-trash;
 }
 
-.octicon-pencil {
+svg.octicon.octicon-pencil {
   @include icon-pencil;
 }
 
-.octicon-bell {
+svg.octicon.octicon-bell {
   @include icon-bell;
 }
 
-.octicon-plus {
+svg.octicon.octicon-plus {
   @include icon-create;
 }
 
-.octicon-mark-github {
+svg.octicon.octicon-mark-github {
   @include icon-globe;
 }

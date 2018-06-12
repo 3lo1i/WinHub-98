@@ -26,7 +26,7 @@
 @mixin tab-container {
   @include tab-container-border;
   background-color: $color-window-background !important;
-  padding: 0 5px 5px;
+  padding: 10px;
 }
 
 @mixin window-border {

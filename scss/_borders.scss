@@ -18,6 +18,9 @@
 }
 
 .UnderlineNav + .position-relative,
+.tabnav + .gutter,
+.tabnav + .follow-list,
+.tabnav + .blankslate,
 .repository-content {
   @include tab-container;
 }

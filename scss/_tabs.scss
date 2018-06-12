@@ -1,0 +1,49 @@
+@import 'variables';
+@import 'mixins';
+
+.tabnav,
+.timeline-new-comment .comment-form-head {
+  margin-bottom: 0;
+}
+
+.UnderlineNav-item,
+.tabnav-tab,
+.reponav-item {
+  border-width: 2px;
+  position: relative;
+  bottom: 1px;
+  color: $color-text;
+  text-decoration: none !important;
+}
+
+.UnderlineNav-item.selected,
+.tabnav-tab.selected,
+.reponav-item.selected {
+  bottom: 4px;
+  height: 35px;
+  margin-bottom: -5px;
+}
+
+.gutter,
+.tabnav-tabs {
+  display: flex;
+}
+
+.gutter {
+  padding: 5px !important;
+}
+
+.UnderlineNav-item {
+  margin-right: 0 !important;
+  text-decoration: none !important;
+}
+
+.user-profile-nav {
+  border-bottom: none;
+  background-color: $color-window-background;
+}
+
+.UnderlineNav + .position-relative > .mt-4 {
+  margin-top: 0 !important;
+  padding-top: 24px;
+}

@@ -6,6 +6,7 @@
 @import 'borders';
 @import 'footer';
 @import 'reset';
+@import 'tabs';
 
 .application-main {
   background-color: $color-window-background;
@@ -30,19 +31,6 @@
   padding: 4px;
 }
 
-.reponav-item {
-  border-width: 2px;
-  position: relative;
-  bottom: 1px;
-  color: $color-text;
-  text-decoration: none !important;
-}
-
-.reponav-item.selected {
-  bottom: 4px;
-  height: 35px;
-  margin-bottom: -5px;
-}
 
 .repohead, .repohead.experiment-repo-nav {
   background-color: $color-window-background;
@@ -205,16 +193,6 @@ a.link-gray, a.link-gray:hover {
   border-bottom: none;
 }
 
-.timeline-new-comment .comment-form-head {
-  margin-bottom: 0;
-}
-
-.UnderlineNav-item {
-  margin-right: 0 !important;
-  text-decoration: none !important;
-}
-
-.user-profile-nav {
-  border-bottom: none;
-  background-color: $color-window-background;
+#repos h2 {
+  margin: 10px 0;
 }
