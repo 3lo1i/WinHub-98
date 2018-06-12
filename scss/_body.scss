@@ -9,4 +9,13 @@ body {
   color: $color-text;
   padding: 2px;
   margin-bottom: 40px;
+
+  & > div {
+    background-color: $color-window-background !important;
+    @include m-0;
+  }
+
+  & > .mt-6 {    
+    @include m-0;
+  }
 }

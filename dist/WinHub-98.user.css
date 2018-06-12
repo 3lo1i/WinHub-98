@@ -15,6 +15,17 @@
     color: #000000;
     padding: 2px;
     margin-bottom: 40px; }
+    body > div {
+      background-color: #bdbdbd !important;
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important; }
+    body > .mt-6 {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important; }
   .wiki-empty-box, .wiki-empty-box:hover {
     color: #000000 !important;
     border: 1px dotted #000000 !important;
@@ -91,6 +102,7 @@
   .table-list-header,
   .timeline-comment-header,
   .file-header,
+  .auth-form-body,
   .commit-tease {
     border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAIAAAACUFjqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4QgLDzAOxR/yjgAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAAtSURBVBjTY6yurmbADVgYGBhaWlqwytXU1LBAWPv27cOqgokBLxjE0oz4gwUAIPsIM3buTOMAAAAASUVORK5CYII=") 2 !important;
     border-image-slice: 2 !important;
@@ -128,6 +140,8 @@
   .overall-summary,
   .markdown-body,
   input[type='text'],
+  input[type='url'],
+  input[type='password'],
   textarea,
   .file .data,
   .list-topics-container,
@@ -167,11 +181,19 @@
     max-width: none !important; }
     .footer div {
       margin: 0 !important; }
-    .footer > :nth-child(1) {
+    .footer > ul {
+      border: 1px solid;
+      border-top-color: #82838a;
+      border-left-color: #82838a;
+      border-bottom-color: #ffffff;
+      border-right-color: #ffffff;
+      padding: 0 5px !important;
+      margin: 2px; }
+    .footer > div:nth-child(1) {
       padding: 0 !important;
       border: none !important;
       justify-content: stretch !important; }
-      .footer > :nth-child(1) ul {
+      .footer > div:nth-child(1) ul {
         border: 1px solid;
         border-top-color: #82838a;
         border-left-color: #82838a;
@@ -179,7 +201,7 @@
         border-right-color: #ffffff;
         padding: 0 5px !important;
         margin: 2px; }
-        .footer > :nth-child(1) ul:nth-child(1) {
+        .footer > div:nth-child(1) ul:nth-child(1) {
           flex-grow: 1; }
     .footer .text-gray {
       color: #000000 !important; }
@@ -187,11 +209,6 @@
       display: none !important; }
     .footer > :nth-child(2) {
       display: none !important; }
-  .application-main {
-    background-color: #bdbdbd;
-    padding-bottom: 2px; }
-  #content-wrapper {
-    background: #bdbdbd; }
   .border-right {
     border-right: none !important; }
   .border-bottom {
@@ -200,6 +217,28 @@
     border-top: none !important; }
   .border-left {
     border-left: none !important; }
+  .text-gray-dark,
+  .text-gray,
+  .note,
+  .menu-item.selected
+.summary-stats,
+  .summary-stats li a,
+  .header-logo,
+  .reponav-item.selected,
+  table.files td.message a,
+  table.files td.age,
+  .auth-form-header {
+    color: #000000 !important; }
+  .timeline-comment {
+    border: none !important; }
+  .comment-form-head,
+  .discussion-timeline-actions {
+    background: none !important; }
+  .application-main {
+    background-color: #bdbdbd;
+    padding-bottom: 2px; }
+  #content-wrapper {
+    background: #bdbdbd; }
   .Box-row {
     border: none !important;
     background: none !important; }
@@ -219,8 +258,12 @@
     background-color: #bdbdbd;
     border: none;
     margin-bottom: 0; }
-  a {
+  a, a:hover {
     color: #0000ff;
+    text-decoration: underline; }
+  table.files td.message a:hover,
+  a.link-gray, a.link-gray:hover {
+    color: #0000ff !important;
     text-decoration: underline; }
   .file {
     border: none !important; }
@@ -230,10 +273,6 @@
       display: none; }
   .timeline-comment-avatar {
     padding: 10px; }
-  .comment-form-head {
-    background: none !important; }
-  .timeline-comment {
-    border: none !important; }
   .repository-content .container {
     width: 100%; }
   #header,
@@ -301,8 +340,6 @@
   #discussion_bucket {
     display: flex;
     flex-direction: row-reverse; }
-  .discussion-timeline-actions {
-    background: none !important; }
   .discussion-timeline {
     width: auto;
     float: none;

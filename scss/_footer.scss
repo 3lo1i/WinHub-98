@@ -8,7 +8,13 @@
     margin: 0 !important;
   }
 
-  & > :nth-child(1) {
+  & > ul {
+    @include statusbar;
+    padding: 0 5px !important;
+    margin: 2px;
+  }
+
+  & > div:nth-child(1) {
     padding: 0 !important;
     border: none !important;
     justify-content: stretch !important;

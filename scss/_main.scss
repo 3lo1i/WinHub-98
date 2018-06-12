@@ -5,6 +5,7 @@
 @import 'icons';
 @import 'borders';
 @import 'footer';
+@import 'reset';
 
 .application-main {
   background-color: $color-window-background;
@@ -13,22 +14,6 @@
 
 #content-wrapper {
   background: $color-window-background;
-}
-
-.border-right {
-  border-right: none !important;
-}
-
-.border-bottom {
-  border-bottom: none !important;
-}
-
-.border-top {
-  border-top: none !important;
-}
-
-.border-left {
-  border-left: none !important;
 }
 
 .Box-row {
@@ -61,11 +46,16 @@
 }
 
 
-a {
+a, a:hover, {
   color: $color-link;
   text-decoration: underline;
 }
 
+table.files td.message a:hover,
+a.link-gray, a.link-gray:hover {
+  color: $color-link !important;
+  text-decoration: underline;
+}
 
 .file {
   border: none !important;
@@ -81,14 +71,6 @@ a {
 
 .timeline-comment-avatar {
   padding: 10px;
-}
-
-.comment-form-head {
-  background: none !important;
-}
-
-.timeline-comment {
-  border: none !important;
 }
 
 
@@ -199,10 +181,6 @@ a {
 #discussion_bucket {
   display: flex;
   flex-direction: row-reverse;
-}
-
-.discussion-timeline-actions {
-  background: none !important;
 }
 
 .discussion-timeline {

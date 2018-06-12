@@ -10,6 +10,7 @@
 .table-list-header,
 .timeline-comment-header,
 .file-header,
+.auth-form-body,
 .commit-tease {
   @include toolbar;
 }
@@ -30,6 +31,8 @@
 .overall-summary,
 .markdown-body,
 input[type='text'],
+input[type='url'],
+input[type='password'],
 textarea,
 .file .data,
 .list-topics-container,

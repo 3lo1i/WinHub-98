@@ -1,0 +1,38 @@
+.border-right {
+  border-right: none !important;
+}
+
+.border-bottom {
+  border-bottom: none !important;
+}
+
+.border-top {
+  border-top: none !important;
+}
+
+.border-left {
+  border-left: none !important;
+}
+
+.text-gray-dark,
+.text-gray,
+.note,
+.menu-item.selected
+.summary-stats,
+.summary-stats li a,
+.header-logo,
+.reponav-item.selected,
+table.files td.message a,
+table.files td.age,
+.auth-form-header {
+  color: $color-text !important;
+}
+
+.timeline-comment {
+  border: none !important;
+}
+
+.comment-form-head,
+.discussion-timeline-actions {
+  background: none !important;
+}
