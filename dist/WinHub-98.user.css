@@ -188,6 +188,7 @@
   .table-list-header,
   .timeline-comment-header,
   .file-header,
+  .tag-input,
   .auth-form-body,
   .commit-tease {
     border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAIAAAACUFjqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4QgLDzAOxR/yjgAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAAtSURBVBjTY6yurmbADVgYGBhaWlqwytXU1LBAWPv27cOqgokBLxjE0oz4gwUAIPsIM3buTOMAAAAASUVORK5CYII=") 2 !important;
@@ -210,7 +211,10 @@
     border-radius: 0 !important;
     background-color: #bdbdbd !important;
     padding: 10px; }
-  .btn, .bth:hover,
+  .btn:not(:active), .bth:hover,
+  .filter-item:not(.selected), .filter-item:not(:active),
+  .menu-item:not(.selected), .menu-item:not(:active), .menu-item:hover,
+  .js-repo-topics-form-toggle:not(:active), .js-repo-topics-form-toggle:hover,
   .pagination span, .pagination a, .pagination em, .pagination a:hover,
   .subnav-links a, .subnav-links a:hover,
   .social-count, .social-cont:hover {
@@ -224,6 +228,24 @@
     color: #000000 !important;
     background-image: none !important;
     text-decoration: none; }
+  .topic-tag,
+  .js-repo-topics-form-toggle:active,
+  .menu-item:active,
+  .menu-item.selected,
+  .filter-item:active,
+  .filter-item.selected,
+  .btn:active {
+    border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gYMEC0hIquz8AAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANUlEQVQI113MsQ2AMAwAwQvKIl7Fa7n13qZAQYIvr/iF8WtDVb3Q3Q9CZooIcB08AAsz893exMoJkf3GVkgAAAAASUVORK5CYII=") 2 !important;
+    border-image-slice: 2 !important;
+    border-image-width: 2px !important;
+    border-image-outset: 0 !important;
+    border-image-repeat: stretch !important;
+    border-radius: 0 !important;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACAQMAAABIeJ9nAAAABlBMVEW9vb3///8EwsWUAAAADElEQVQI12NoYHAAAAHEAMFJRSpJAAAAAElFTkSuQmCC") !important;
+    background-repeat: repeat;
+    background-size: 2px 2px;
+    color: #000000 !important;
+    text-decoration: none; }
   .header-search-input,
   .files,
   .blankslate,
@@ -234,8 +256,10 @@
   input[type='password'],
   input[type='search'],
   textarea,
+  .pinned-repo-item,
+  .js-contribution-graph > .border,
+  .profile-timeline-card,
   .file .data,
-  .list-topics-container,
   .js-navigation-container,
   .commit-tease-contributors,
   .repository-lang-stats-graph {
@@ -308,6 +332,8 @@
     border-top: none !important; }
   .border-left {
     border-left: none !important; }
+  .btn:focus {
+    box-shadow: none !important; }
   .text-gray-dark,
   .text-gray,
   .note,
@@ -324,12 +350,17 @@
   .vcard-username,
   .auth-form-header {
     color: #000000 !important; }
+  .menu,
   .timeline-comment {
     border: none !important; }
   .bg-white,
   .comment-form-head,
   .discussion-timeline-actions {
     background: none !important; }
+  .js-repo-topics-form-toggle {
+    padding: 5px; }
+  .menu-item.selected::before {
+    display: none; }
   .tabnav,
   .timeline-new-comment .comment-form-head {
     margin-bottom: 0; }
@@ -474,4 +505,8 @@
     border-top: none;
     border-bottom: none; }
   #repos h2 {
-    margin: 10px 0; } }
+    margin: 10px 0; }
+  .topic-tag {
+    font-weight: bold; }
+  .pinned-repo-item {
+    width: calc(50% - 10px); } }

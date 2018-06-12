@@ -57,11 +57,24 @@
   @include bitmap-border($url-button-border);
 }
 
+@mixin button-pushed-border {
+  @include bitmap-border($url-button-pushed-border);
+}
+
 @mixin button {
   @include button-border;
   background-color: $color-window-background !important;
   color: $color-text !important;
   background-image: none !important;
+  text-decoration: none;
+}
+
+@mixin button-pushed {
+  @include button-pushed-border;
+  background-image: url($url-button-pushed-background) !important;
+  background-repeat: repeat;
+  background-size: 2px 2px;
+  color: $color-text !important;
   text-decoration: none;
 }
 

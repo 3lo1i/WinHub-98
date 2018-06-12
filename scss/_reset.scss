@@ -14,6 +14,10 @@
   border-left: none !important;
 }
 
+.btn:focus {
+  box-shadow: none !important;
+}
+
 .text-gray-dark,
 .text-gray,
 .note,
@@ -32,6 +36,7 @@ table.files td.age,
   color: $color-text !important;
 }
 
+.menu,
 .timeline-comment {
   border: none !important;
 }
@@ -40,4 +45,12 @@ table.files td.age,
 .comment-form-head,
 .discussion-timeline-actions {
   background: none !important;
+}
+
+.js-repo-topics-form-toggle {
+  padding: 5px;
+}
+
+.menu-item.selected::before {
+  display: none;
 }

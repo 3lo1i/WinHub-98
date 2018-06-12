@@ -12,6 +12,7 @@
 .table-list-header,
 .timeline-comment-header,
 .file-header,
+.tag-input,
 .auth-form-body,
 .commit-tease {
   @include toolbar;
@@ -25,11 +26,24 @@
   @include tab-container;
 }
 
-.btn, .bth:hover,
+.btn:not(:active), .bth:hover,
+.filter-item:not(.selected), .filter-item:not(:active),
+.menu-item:not(.selected), .menu-item:not(:active), .menu-item:hover,
+.js-repo-topics-form-toggle:not(:active), .js-repo-topics-form-toggle:hover,
 .pagination span, .pagination a, .pagination em, .pagination a:hover,
 .subnav-links a, .subnav-links a:hover,
 .social-count, .social-cont:hover {
   @include button;
+}
+
+.topic-tag,
+.js-repo-topics-form-toggle:active,
+.menu-item:active,
+.menu-item.selected,
+.filter-item:active,
+.filter-item.selected,
+.btn:active {
+  @include button-pushed;
 }
 
 .header-search-input,
@@ -42,8 +56,10 @@ input[type='url'],
 input[type='password'],
 input[type='search'],
 textarea,
+.pinned-repo-item,
+.js-contribution-graph > .border,
+.profile-timeline-card,
 .file .data,
-.list-topics-container,
 .js-navigation-container,
 .commit-tease-contributors,
 .repository-lang-stats-graph {

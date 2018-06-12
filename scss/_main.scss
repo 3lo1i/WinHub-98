@@ -196,3 +196,11 @@ a.link-gray, a.link-gray:hover {
 #repos h2 {
   margin: 10px 0;
 }
+
+.topic-tag {
+  font-weight: bold;
+}
+
+.pinned-repo-item {
+  width: calc(50% - 10px);
+}
