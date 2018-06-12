@@ -311,6 +311,9 @@
   .comment-reactions .add-reaction-btn {
     border-right: 1px solid #7b7b7b;
     box-shadow: 1px 0px 0px 0px #ffffff; }
+  .news .UnderlineNav {
+    border-bottom: 1px solid #ffffff !important;
+    box-shadow: 0px 1px 0px 0px #dfdfdf; }
   .footer {
     background-color: #bdbdbd;
     margin: 0;
@@ -416,7 +419,9 @@
     margin-bottom: -5px; }
   .gutter,
   .tabnav-tabs {
-    display: flex; }
+    display: flex;
+    position: relative;
+    z-index: 1; }
   .gutter {
     padding: 5px !important; }
   .UnderlineNav-item {
@@ -428,6 +433,8 @@
   .UnderlineNav + .position-relative > .mt-4 {
     margin-top: 0 !important;
     padding-top: 24px; }
+  .news .UnderlineNav {
+    padding-top: 16px; }
   .application-main {
     background-color: #bdbdbd;
     padding-bottom: 2px; }

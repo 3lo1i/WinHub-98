@@ -29,6 +29,8 @@
 .gutter,
 .tabnav-tabs {
   display: flex;
+  position: relative;
+  z-index: 1;
 }
 
 .gutter {
@@ -48,4 +50,8 @@
 .UnderlineNav + .position-relative > .mt-4 {
   margin-top: 0 !important;
   padding-top: 24px;
+}
+
+.news .UnderlineNav {
+  padding-top: 16px;
 }
