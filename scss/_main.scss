@@ -10,6 +10,11 @@
 .application-main {
   background-color: $color-window-background;
   padding-bottom: 2px;
+
+  & > div > .mt-4 {
+    margin-top: 0 !important;
+    padding-top: 24px !important;
+  }
 }
 
 #content-wrapper {
@@ -51,6 +56,7 @@ a, a:hover, {
   text-decoration: underline;
 }
 
+.muted-link, .muted-link:hover,
 table.files td.message a:hover,
 a.link-gray, a.link-gray:hover {
   color: $color-link !important;
@@ -201,4 +207,14 @@ a.link-gray, a.link-gray:hover {
 
 .timeline-new-comment .comment-form-head {
   margin-bottom: 0;
+}
+
+.UnderlineNav-item {
+  margin-right: 0 !important;
+  text-decoration: none !important;
+}
+
+.user-profile-nav {
+  border-bottom: none;
+  background-color: $color-window-background;
 }

@@ -21,9 +21,13 @@
 .summary-stats,
 .summary-stats li a,
 .header-logo,
+.UnderlineNav-item,
+.UnderlineNav-item.selected,
 .reponav-item.selected,
 table.files td.message a,
 table.files td.age,
+.user-profile-bio,
+.vcard-username,
 .auth-form-header {
   color: $color-text !important;
 }
@@ -32,6 +36,7 @@ table.files td.age,
   border: none !important;
 }
 
+.bg-white,
 .comment-form-head,
 .discussion-timeline-actions {
   background: none !important;

@@ -3,6 +3,8 @@
  */
 
 .tabnav-tab,
+.UnderlineNav-item,
+.UnderlineNav-item.selected,
 .reponav-item {
   @include tab;
 }
@@ -14,6 +16,8 @@
 .commit-tease {
   @include toolbar;
 }
+
+.UnderlineNav + .position-relative,
 .repository-content {
   @include tab-container;
 }
@@ -33,6 +37,7 @@
 input[type='text'],
 input[type='url'],
 input[type='password'],
+input[type='search'],
 textarea,
 .file .data,
 .list-topics-container,

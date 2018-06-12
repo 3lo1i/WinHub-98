@@ -126,6 +126,8 @@
  * Use only one @include for each mixin to minimize resulting file size.
  */
   .tabnav-tab,
+  .UnderlineNav-item,
+  .UnderlineNav-item.selected,
   .reponav-item {
     border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAACXBIWXMAAC4jAAAuIwF4pT92AAAARklEQVQIHZ1MyQ0AIAgDR4PZGAtWYRSlEF/+bELT9IDdnQAR2S2KIoKhFwhBZtI9Ve0i78I1UQRqSWY2y7Fe7revPc5/eACU0x6nv60pKwAAAABJRU5ErkJggg==") 2 !important;
     border-image-slice: 2 !important;
@@ -147,6 +149,7 @@
     border-image-repeat: stretch !important;
     border-radius: 0 !important;
     background-color: #bdbdbd !important; }
+  .UnderlineNav + .position-relative,
   .repository-content {
     border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAQUlEQVQIHWP8DwQMWAAjIyMDC0j8wYMHKNILFy4E88GSINbDhw9RFIA4TBgiSAJ4JcHGwuxA0gRmMgJJrK4FyQIA4UcOGkQo9UIAAAAASUVORK5CYII=") 2 !important;
     border-image-slice: 2 !important;
@@ -178,6 +181,7 @@
   input[type='text'],
   input[type='url'],
   input[type='password'],
+  input[type='search'],
   textarea,
   .file .data,
   .list-topics-container,
@@ -260,19 +264,27 @@
 .summary-stats,
   .summary-stats li a,
   .header-logo,
+  .UnderlineNav-item,
+  .UnderlineNav-item.selected,
   .reponav-item.selected,
   table.files td.message a,
   table.files td.age,
+  .user-profile-bio,
+  .vcard-username,
   .auth-form-header {
     color: #000000 !important; }
   .timeline-comment {
     border: none !important; }
+  .bg-white,
   .comment-form-head,
   .discussion-timeline-actions {
     background: none !important; }
   .application-main {
     background-color: #bdbdbd;
     padding-bottom: 2px; }
+    .application-main > div > .mt-4 {
+      margin-top: 0 !important;
+      padding-top: 24px !important; }
   #content-wrapper {
     background: #bdbdbd; }
   .Box-row {
@@ -297,6 +309,7 @@
   a, a:hover {
     color: #0000ff;
     text-decoration: underline; }
+  .muted-link, .muted-link:hover,
   table.files td.message a:hover,
   a.link-gray, a.link-gray:hover {
     color: #0000ff !important;
@@ -389,4 +402,10 @@
     border-top: none;
     border-bottom: none; }
   .timeline-new-comment .comment-form-head {
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+  .UnderlineNav-item {
+    margin-right: 0 !important;
+    text-decoration: none !important; }
+  .user-profile-nav {
+    border-bottom: none;
+    background-color: #bdbdbd; } }
