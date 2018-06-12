@@ -140,12 +140,24 @@
   @include octicon-replace($url-icon-repository, 16px, 16px);
 }
 
+@mixin icon-organization {
+  @include octicon-replace($url-icon-organization, 16px, 16px);
+}
+
 @mixin icon-trash {
   @include octicon-replace($url-icon-trash, 16px, 16px);
 }
 
 @mixin icon-pencil {
   @include octicon-replace($url-icon-pencil, 16px, 16px);
+}
+
+@mixin icon-fork {
+  @include octicon-replace($url-icon-fork, 16px, 16px);
+}
+
+@mixin icon-location {
+  @include octicon-replace($url-icon-location, 16px, 16px);
 }
 
 @mixin icon-create {
@@ -158,6 +170,26 @@
 
 @mixin icon-globe {
   @include octicon-replace($url-icon-globe, 32px, 32px);
+}
+
+@mixin icon-mute {
+  @include octicon-replace($url-icon-mute, 16px, 16px);
+}
+
+@mixin icon-unmute {
+  @include octicon-replace($url-icon-unmute, 16px, 16px);
+}
+
+@mixin icon-mail {
+  @include octicon-replace($url-icon-mail, 16px, 16px);
+}
+
+@mixin icon-link {
+  @include octicon-replace($url-icon-link, 16px, 16px);
+}
+
+@mixin icon-alert {
+  @include octicon-replace($url-icon-alert, 16px, 16px);
 }
 
 @mixin m-0 {

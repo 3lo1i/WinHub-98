@@ -12,12 +12,20 @@ svg.octicon.octicon-tag {
   @include icon-releases;
 }
 
-svg.octicon.octicon-organization {
+.numbers-summary svg.octicon.octicon-organization {
   @include icon-contributors;
+}
+
+svg.octicon.octicon-organization {
+  @include icon-organization;
 }
 
 svg.octicon.octicon-law {
   @include icon-law;
+}
+
+svg.octicon.octicon-repo-forked {
+  @include icon-fork;
 }
 
 svg.octicon.octicon-question {
@@ -58,4 +66,28 @@ svg.octicon.octicon-plus {
 
 svg.octicon.octicon-mark-github {
   @include icon-globe;
+}
+
+svg.octicon.octicon-location {
+  @include icon-location;
+}
+
+svg.octicon.octicon-mute {
+  @include icon-mute;
+}
+
+svg.octicon.octicon-unmute {
+  @include icon-unmute;
+}
+
+svg.octicon.octicon-mail {
+  @include icon-mail;
+}
+
+svg.octicon.octicon-link {
+  @include icon-link;
+}
+
+svg.octicon.octicon-alert {
+  @include icon-alert;
 }
