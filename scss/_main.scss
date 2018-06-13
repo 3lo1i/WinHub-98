@@ -232,3 +232,13 @@ a.link-gray, a.link-gray:hover {
 .gh-header.pull .gh-header-meta {
   padding-bottom: 5px;
 }
+
+
+.capped-card-content {
+  width: calc(100% - 6px);
+  margin: 0 3px;
+}
+
+.viz {
+  width: 100%;
+}

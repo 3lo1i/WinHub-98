@@ -255,6 +255,7 @@
   .header-search-input,
   .files,
   .blankslate,
+  .viz,
   .overall-summary,
   .markdown-body,
   input[type='text'],
@@ -571,4 +572,9 @@
   .pr-toolbar {
     margin: 0; }
   .gh-header.pull .gh-header-meta {
-    padding-bottom: 5px; } }
+    padding-bottom: 5px; }
+  .capped-card-content {
+    width: calc(100% - 6px);
+    margin: 0 3px; }
+  .viz {
+    width: 100%; } }
