@@ -15,6 +15,8 @@
     color: #000000;
     padding: 2px;
     margin-bottom: 40px; }
+    body.min-width-0 {
+      min-width: 1020px !important; }
     body > div {
       background-color: #bdbdbd !important;
       margin-top: 0 !important;
@@ -184,7 +186,8 @@
     border-image-repeat: stretch !important;
     border-radius: 0 !important;
     background-color: #bdbdbd !important;
-    padding: 0 5px 5px; }
+    padding: 0 5px 5px;
+    z-index: 1; }
   .table-list-header,
   .timeline-comment-header,
   .file-header,
@@ -223,7 +226,7 @@
   .js-repo-topics-form-toggle:not(:active), .js-repo-topics-form-toggle:hover,
   .pagination span, .pagination a, .pagination em, .pagination a:hover,
   .subnav-links a, .subnav-links a:hover,
-  .social-count, .social-cont:hover {
+  .social-count:not(:active), .social-cont:hover {
     border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAIAAAACDbGyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4QgLEQksCEOwqgAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAAtSURBVAjXbckxEQAwDMNAuRf+DIzNUJIh1079UVJ3c0kqIAlgGzh7NgH1zt8AgmEL9PFGHB0AAAAASUVORK5CYII=") 2 !important;
     border-image-slice: 2 !important;
     border-image-width: 2px !important;
@@ -240,6 +243,7 @@
   .menu-item.selected,
   .filter-item:active,
   .filter-item.selected,
+  .social-count:active,
   .btn:active {
     border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gYMEC0hIquz8AAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANUlEQVQI113MsQ2AMAwAwQvKIl7Fa7n13qZAQYIvr/iF8WtDVb3Q3Q9CZooIcB08AAsz893exMoJkf3GVkgAAAAASUVORK5CYII=") 2 !important;
     border-image-slice: 2 !important;
@@ -264,6 +268,7 @@
   input[type='search'],
   textarea,
   .Box,
+  #user-repositories-list li,
   .pinned-repo-item,
   .js-contribution-graph > .border,
   .profile-timeline-card,
@@ -280,6 +285,7 @@
     background-color: #ffffff !important; }
   body,
   .timeline-new-comment,
+  .user-profile-sticky-bar,
   .boxed-group {
     border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAQklEQVQIHWO8d+/efwYsQElJiYEFJK6oqIgiXVNTA+aDJUGsffv2oSgAcZgwRJAE8EqCjYXZgaQJzGQEklhdC5IFANAGCpZNTGE4AAAAAElFTkSuQmCC") 2 !important;
     border-image-slice: 2 !important;
@@ -288,6 +294,7 @@
     border-image-repeat: stretch !important;
     border-radius: 0 !important; }
   .timeline-new-comment,
+  .user-profile-sticky-bar,
   .boxed-group {
     background-color: #bdbdbd !important; }
   hr {
@@ -315,6 +322,14 @@
   .news .UnderlineNav {
     border-bottom: 1px solid #ffffff !important;
     box-shadow: 0px 1px 0px 0px #dfdfdf; }
+  .application-main .UnderlineNav {
+    border-bottom: 1px solid #ffffff !important;
+    box-shadow: 0px 1px 0px 0px #dfdfdf;
+    margin-bottom: -1px; }
+  .UnderlineNav.is-stuck {
+    padding-top: 10px; }
+  .UnderlineNav + .position-relative {
+    border-top: none !important; }
   .footer {
     background-color: #bdbdbd;
     margin: 0;
@@ -397,8 +412,10 @@
     background: none !important; }
   .js-repo-topics-form-toggle {
     padding: 5px; }
+  .profile-timeline.discussion-timeline .profile-timeline-month-heading::after,
+  .user-profile-sticky-bar::after,
   .menu-item.selected::before {
-    display: none; }
+    display: none !important; }
   .tabnav,
   .timeline-new-comment .comment-form-head {
     margin-bottom: 0; }
@@ -577,4 +594,11 @@
     width: calc(100% - 6px);
     margin: 0 3px; }
   .viz {
-    width: 100%; } }
+    width: 100%; }
+  .commit-tease-contributors {
+    margin: 5px 0 0 0; }
+  .user-profile-sticky-bar {
+    padding: 0 15px; }
+  #user-repositories-list li {
+    margin: 10px 0px;
+    padding: 15px; } }

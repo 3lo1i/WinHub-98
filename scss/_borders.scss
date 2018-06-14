@@ -7,6 +7,7 @@
 .UnderlineNav-item.selected,
 .reponav-item {
   @include tab;
+  z-index: 1;
 }
 
 .table-list-header,
@@ -38,7 +39,7 @@
 .js-repo-topics-form-toggle:not(:active), .js-repo-topics-form-toggle:hover,
 .pagination span, .pagination a, .pagination em, .pagination a:hover,
 .subnav-links a, .subnav-links a:hover,
-.social-count, .social-cont:hover {
+.social-count:not(:active), .social-cont:hover {
   @include button;
 }
 
@@ -48,6 +49,7 @@
 .menu-item.selected,
 .filter-item:active,
 .filter-item.selected,
+.social-count:active,
 .btn:active {
   @include button-pushed;
 }
@@ -64,6 +66,7 @@ input[type='password'],
 input[type='search'],
 textarea,
 .Box,
+#user-repositories-list li,
 .pinned-repo-item,
 .js-contribution-graph > .border,
 .profile-timeline-card,
@@ -76,11 +79,13 @@ textarea,
 
 body,
 .timeline-new-comment,
+.user-profile-sticky-bar,
 .boxed-group {
   @include window-border;
 }
 
 .timeline-new-comment,
+.user-profile-sticky-bar,
 .boxed-group {
   background-color: $color-window-background !important;
 }
@@ -118,4 +123,18 @@ hr {
 .news .UnderlineNav {
   border-bottom: 1px solid #ffffff !important;
   box-shadow: 0px 1px 0px 0px #dfdfdf;
+}
+
+.application-main .UnderlineNav {  
+  border-bottom: 1px solid #ffffff !important;
+  box-shadow: 0px 1px 0px 0px #dfdfdf;
+  margin-bottom: -1px;
+}
+
+.UnderlineNav.is-stuck {
+  padding-top: 10px;
+}
+
+.UnderlineNav + .position-relative {
+  border-top: none !important;
 }

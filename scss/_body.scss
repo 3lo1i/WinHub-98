@@ -10,6 +10,10 @@ body {
   padding: 2px;
   margin-bottom: 40px;
 
+  &.min-width-0 {
+    min-width: 1020px !important;
+  }
+
   & > div {
     background-color: $color-window-background !important;
     @include m-0;

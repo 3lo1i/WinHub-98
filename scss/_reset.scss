@@ -64,6 +64,8 @@ table.files td.message a
   padding: 5px;
 }
 
+.profile-timeline.discussion-timeline .profile-timeline-month-heading::after,
+.user-profile-sticky-bar::after,
 .menu-item.selected::before {
-  display: none;
+  display: none !important;
 }
