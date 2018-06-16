@@ -53,6 +53,10 @@ table.files td.message a
   border: none !important;
 }
 
+.upload-enabled.focused {
+  box-shadow: none;
+}
+
 .bg-white,
 .comment-form-head,
 .thread-subscription-status,
