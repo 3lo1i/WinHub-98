@@ -1,6 +1,8 @@
 # WinHub-98
 A modern-looking userstyle for GitHub
 
+Based on [tweet](https://twitter.com/nikitonsky/status/1003593821723267072) by [@nikitonsky](https://github.com/tonsky).
+
 ![screenshot](https://raw.githubusercontent.com/3lo1i/WinHub-98/master/screenshots/code-tab.png)
 
 ## Installation
