@@ -20,8 +20,12 @@ svg.octicon.octicon-organization {
   @include icon-organization;
 }
 
-svg.octicon.octicon-law {
+.numbers-summary svg.octicon.octicon-law {
   @include icon-law;
+}
+
+svg.octicon.octicon-law {
+  @include icon-law-small;
 }
 
 svg.octicon.octicon-repo-forked {
@@ -90,4 +94,8 @@ svg.octicon.octicon-link {
 
 svg.octicon.octicon-alert {
   @include icon-alert;
+}
+
+svg.octicon.octicon-star {
+  @include icon-star;
 }

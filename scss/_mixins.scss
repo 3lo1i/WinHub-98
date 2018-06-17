@@ -133,6 +133,10 @@
   @include octicon-replace($url-icon-law, 32px, 32px);
 }
 
+@mixin icon-law-small {
+  @include octicon-replace($url-icon-law-small, 16px, 16px);
+}
+
 @mixin icon-question {
   @include octicon-replace($url-icon-question, 16px, 16px);
 }
@@ -203,6 +207,10 @@
 
 @mixin icon-alert {
   @include octicon-replace($url-icon-alert, 16px, 16px);
+}
+
+@mixin icon-star {
+  @include octicon-replace($url-icon-star, 16px, 16px);
 }
 
 @mixin m-0 {
