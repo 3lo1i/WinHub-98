@@ -1,0 +1,27 @@
+@import 'variables';
+@import 'mixins';
+
+.js-notice {
+  position: relative;
+  margin-bottom: 120px !important;
+}
+
+.js-notice::before {
+  @include tooltip-tail;
+  content: ' ';
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -16px;
+  right: 65px;
+}
+
+.js-notice::after {
+  background: url($url-clippy) no-repeat;
+  content: ' ';
+  height: 94px;
+  width: 86px;
+  position: absolute;
+  right: 07px;
+  bottom: 0;
+  margin-bottom: -113px;
+}
