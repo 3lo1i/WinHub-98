@@ -99,3 +99,16 @@ svg.octicon.octicon-alert {
 svg.octicon.octicon-star {
   @include icon-star;
 }
+
+svg.octicon.octicon-unfold {
+  @include icon-unfold;
+}
+svg.octicon.octicon-fold {
+  @include icon-fold;
+}
+svg.octicon.octicon-x {
+  @include icon-x;
+}
+svg.octicon.octicon-broadcast {
+  @include icon-broadcast;
+}

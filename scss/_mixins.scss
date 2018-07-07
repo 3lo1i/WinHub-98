@@ -233,6 +233,22 @@
   @include octicon-replace($url-icon-star, 16px, 16px);
 }
 
+@mixin icon-unfold {
+  @include octicon-replace($url-icon-unfold, 14px, 16px);
+}
+
+@mixin icon-fold {
+  @include octicon-replace($url-icon-fold, 14px, 16px);
+}
+
+@mixin icon-x {
+  @include octicon-replace($url-icon-x, 12px, 16px);
+}
+
+@mixin icon-broadcast {
+  @include octicon-replace($url-icon-broadcast, 16px, 16px);
+}
+
 @mixin m-0 {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
