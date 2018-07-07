@@ -1,16 +1,37 @@
 @import 'variables';
 
-@mixin bitmap-border($border-url) {
-  border-image: url($border-url) 2 !important;
-  border-image-slice: 2 !important;
-  border-image-width: 2px !important;
+@mixin bitmap-border($border-url, $image-slice, $image-width, $border-radius) {
+  border-image: url($border-url) !important;
+  border-image-slice: $image-slice !important;
+  border-image-width: $image-width !important;
   border-image-outset: 0 !important;
   border-image-repeat: stretch !important;
-  border-radius: 0 !important;
+  border-radius: $border-radius !important;
+}
+
+@mixin bitmap-border-2px($border-url) {
+  @include bitmap-border($border-url, 2, 2px, 0);
+}
+
+@mixin tooltip {
+  @include bitmap-border($url-tooltip-border, 8, 8px, 12px);
+  background-color: $color-tooltip !important;
+  color: $color-text !important;
+  font-size: inherit !important;
+}
+
+@mixin tooltip-tail {
+  background: url($url-tooltip-tail) no-repeat !important;
+  height: 16px !important;
+  width: 10px !important;
+  border-bottom: none !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
 }
 
 @mixin tab-border {
-  @include bitmap-border($url-tab-border);
+  @include bitmap-border-2px($url-tab-border);
 }
 
 @mixin tab {
@@ -20,7 +41,7 @@
 }
 
 @mixin tab-container-border {
-  @include bitmap-border($url-tab-container-border);
+  @include bitmap-border-2px($url-tab-container-border);
 }
 
 @mixin tab-container {
@@ -30,7 +51,7 @@
 }
 
 @mixin window-border {
-  @include bitmap-border($url-window-border);
+  @include bitmap-border-2px($url-window-border);
 }
 
 @mixin window {
@@ -45,7 +66,7 @@
 }
 
 @mixin input-border {
-  @include bitmap-border($url-input-border);
+  @include bitmap-border-2px($url-input-border);
 }
 
 @mixin input {
@@ -54,11 +75,11 @@
 }
 
 @mixin button-border {
-  @include bitmap-border($url-button-border);
+  @include bitmap-border-2px($url-button-border);
 }
 
 @mixin button-pushed-border {
-  @include bitmap-border($url-button-pushed-border);
+  @include bitmap-border-2px($url-button-pushed-border);
 }
 
 @mixin button {
@@ -79,7 +100,7 @@
 }
 
 @mixin toolbar-border {
-  @include bitmap-border($url-toolbar-border);
+  @include bitmap-border-2px($url-toolbar-border);
 }
 
 @mixin toolbar {

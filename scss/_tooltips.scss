@@ -1,0 +1,32 @@
+@import 'variables';
+@import 'mixins';
+
+.tooltipped::after,
+.flash,
+.js-notice {
+  @include tooltip;
+}
+
+.tooltipped::before {
+  @include tooltip-tail;
+}
+
+.tooltipped-sw::before {
+  bottom: -7px !important;
+  border-bottom-color: transparent !important;
+  transform: scale(1, -1);
+}
+
+.tooltipped-se::before {
+  bottom: -7px !important;
+  border-bottom-color: transparent !important;
+  transform: scale(-1, -1);
+}
+
+.tooltipped-nw::before {
+  /* transform: scale(1, 1); */
+}
+
+.tooltipped-ne::before {
+  transform: scale(-1, 1);
+}
