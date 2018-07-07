@@ -50,19 +50,26 @@
 .subnav-links a,
 .subnav-links a:hover
 {
+  @include button-border;
   @include button;
 }
 
 .btn:active,
-.filter-item.selected,
 .filter-item:active,
 .js-repo-topics-form-toggle:active,
-.menu-item.selected,
 .menu-item:active,
+.social-count:active
+{
+  @include button-pushed-border;
+  @include button;
+}
+
+.filter-item.selected,
+.menu-item.selected,
 .pagination em,
-.social-count:active,
 .topic-tag
 {
+  @include button-pushed-border;
   @include button-pushed;
 }
 

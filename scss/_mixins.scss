@@ -83,7 +83,6 @@
 }
 
 @mixin button {
-  @include button-border;
   background-color: $color-window-background !important;
   color: $color-text !important;
   background-image: none !important;
@@ -91,12 +90,12 @@
 }
 
 @mixin button-pushed {
-  @include button-pushed-border;
   background-image: url($url-button-pushed-background) !important;
   background-repeat: repeat;
   background-size: 2px 2px;
   color: $color-text !important;
   text-decoration: none;
+  font-weight: bold;
 }
 
 @mixin toolbar-border {
