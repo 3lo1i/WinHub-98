@@ -17,6 +17,7 @@
   transform: scale(1, -1);
 }
 
+.tooltipped-s::before,
 .tooltipped-se::before {
   bottom: -7px !important;
   border-bottom-color: transparent !important;
@@ -27,6 +28,7 @@
   /* transform: scale(1, 1); */
 }
 
+.tooltipped-n,
 .tooltipped-ne::before {
   transform: scale(-1, 1);
 }

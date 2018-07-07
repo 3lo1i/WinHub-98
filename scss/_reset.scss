@@ -49,7 +49,12 @@ table.files td.message a
   color: $color-text !important;
 }
 
+.text-blue {
+  color: $color-link !important;
+}
+
 .menu,
+.js-notice .border,
 .timeline-comment {
   border: none !important;
 }
