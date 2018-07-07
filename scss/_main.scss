@@ -274,3 +274,12 @@ a.link-gray, a.link-gray:hover {
 .comment-form-head {
   margin-top: 30px;
 }
+
+.repo-language-color,
+.repository-lang-stats ol.repository-lang-stats-numbers li .language-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 0;
+  border: 1px solid black;
+  vertical-align: text-top;
+}
