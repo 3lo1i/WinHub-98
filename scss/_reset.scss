@@ -30,9 +30,12 @@
 .gh-header-meta,
 .gh-header-number,
 .header-logo,
-.menu-item.selected
+.link-gray-dark, .link-gray-dark:hover,
+.menu-item.selected,
 .note,
 .reponav-item.selected,
+.select-menu-tab,
+.select-menu-tabs a,
 .summary-stats li a,
 .summary-stats,
 .text-gray,
@@ -42,7 +45,6 @@
 .UnderlineNav-item.selected,
 .user-profile-bio,
 .vcard-username,
-.link-gray-dark, .link-gray-dark:hover,
 table.files td.age,
 table.files td.message a
 {
@@ -78,4 +80,11 @@ table.files td.message a
 .user-profile-sticky-bar::after,
 .menu-item.selected::before {
   display: none !important;
+}
+
+.pagehead-actions > li,
+.select-menu-modal,
+.text-small
+{
+  font-size: inherit !important;
 }

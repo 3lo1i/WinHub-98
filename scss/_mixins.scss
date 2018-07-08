@@ -72,6 +72,7 @@
 @mixin input {
   @include input-border;
   background-color: $color-input-background !important;
+  box-shadow: none !important;
 }
 
 @mixin button-border {
@@ -131,6 +132,31 @@
   height: $h;
   color: transparent !important;
   vertical-align: middle;
+}
+
+@mixin border-bottom-separator {
+  border-bottom: 1px solid #7b7b7b !important;
+  box-shadow: 0px 1px 0px 0px #ffffff;
+}
+
+@mixin border-top-separator {
+  border-top: 1px solid #7b7b7b !important;
+  box-shadow: 0px -1px 0px 0px #ffffff;
+}
+
+@mixin border-right-separator {
+  border-right: 1px solid #7b7b7b !important;
+  box-shadow: 1px 0px 0px 0px #ffffff;
+}
+
+@mixin border-left-separator {
+  border-left: 1px solid #7b7b7b !important;
+  box-shadow: -1px 0px 0px 0px #ffffff;
+}
+
+@mixin border-top-tabs {
+  border-bottom: 1px solid #ffffff !important; 
+  box-shadow: 0px 1px 0px 0px #dfdfdf; 
 }
 
 @mixin icon-branches {

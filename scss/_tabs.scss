@@ -9,7 +9,9 @@
 .UnderlineNav-item,
 .tabnav-tab,
 .tabnav-pr .tabnav-tab,
-.reponav-item {
+.select-menu-tabs a,
+.reponav-item
+{
   border-width: 2px;
   position: relative;
   bottom: 1px;
@@ -20,6 +22,7 @@
 
 .UnderlineNav-item.selected,
 .tabnav-tab.selected,
+.select-menu-tabs a.selected,
 .reponav-item.selected {
   bottom: 4px;
   height: 35px;
@@ -27,6 +30,7 @@
 }
 
 .gutter,
+.select-menu-tabs ul,
 .tabnav-tabs {
   display: flex;
   position: relative;

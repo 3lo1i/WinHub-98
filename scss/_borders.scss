@@ -5,6 +5,7 @@
 .tabnav-tab,
 .UnderlineNav-item,
 .UnderlineNav-item.selected,
+.select-menu-tabs a,
 .reponav-item {
   @include tab;
   z-index: 1;
@@ -39,6 +40,8 @@
 .filter-item:not(:active),
 .js-repo-topics-form-toggle:hover,
 .js-repo-topics-form-toggle:not(:active),
+.js-jump-to-badge-jump:hover,
+.js-jump-to-badge-jump:not(:active),
 .menu-item:hover,
 .menu-item:not(.selected),
 .menu-item:not(:active),
@@ -57,6 +60,7 @@
 .btn:active,
 .filter-item:active,
 .js-repo-topics-form-toggle:active,
+.js-jump-to-badge-jump:active,
 .menu-item:active,
 .social-count:active
 {
@@ -74,6 +78,7 @@
 .btn:active,
 .filter-item:active,
 .js-repo-topics-form-toggle:active,
+.js-jump-to-badge-jump:active,
 .menu-item:active,
 .social-count:active,
 .filter-item.selected,
@@ -86,13 +91,13 @@
 
 #user-repositories-list li,
 .blankslate,
-.Box,
+.Box:not(.jump-to-suggestions),
 .commit-tease-contributors,
 .file .data,
 .files,
 .header-search-input,
 .js-contribution-graph > .border,
-.js-navigation-container,
+.js-navigation-container:not(.select-menu-list),
 .js-repository-recommendation,
 .markdown-body,
 .org-repos li,
@@ -110,17 +115,22 @@ textarea
   @include input;
 }
 
-body,
+.boxed-group,
+.dropdown-menu,
+.select-menu-modal,
+.timeline-comment-wrapper,
 .timeline-new-comment,
 .user-profile-sticky-bar,
-.timeline-comment-wrapper,
-.boxed-group {
+body
+{
   @include window-border;
 }
 
+.boxed-group,
+.select-menu-modal,
 .timeline-new-comment,
-.user-profile-sticky-bar,
-.boxed-group {
+.user-profile-sticky-bar
+{
   background-color: $color-window-background !important;
 }
 
@@ -137,31 +147,28 @@ hr {
 .Box-header,
 .gh-header.pull .gh-header-meta,
 .Subhead {
-  border-bottom: 1px solid #7b7b7b;
-  box-shadow: 0px 1px 0px 0px #ffffff;  
+  @include border-bottom-separator;
 }
 
 .discussion-sidebar-item + .discussion-sidebar-item,
 .discussion-item + .discussion-item,
 .discussion-item-review + .discussion-item {
-  border-top: 1px solid #ffffff;
-  box-shadow: 0px -1px 0px 0px #7b7b7b;  
+  @include border-top-separator;
 }
 
 .reaction-summary-item,
 .comment-reactions .add-reaction-btn {  
-  border-right: 1px solid #7b7b7b;
-  box-shadow: 1px 0px 0px 0px #ffffff;  
+  @include border-right-separator;
 }
 
 .news .UnderlineNav {
-  border-bottom: 1px solid #ffffff !important;
-  box-shadow: 0px 1px 0px 0px #dfdfdf;
+  @include border-top-tabs;
 }
 
-.application-main .UnderlineNav {  
-  border-bottom: 1px solid #ffffff !important;
-  box-shadow: 0px 1px 0px 0px #dfdfdf;
+.select-menu-tabs,
+.application-main .UnderlineNav
+{  
+  @include border-top-tabs;
   margin-bottom: -1px;
 }
 
