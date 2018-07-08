@@ -1,12 +1,12 @@
 @import 'variables';
 @import 'mixins';
 
-.js-notice {
+.js-notice:not(.js-repository-recommendation) {
   position: relative;
   margin-bottom: 120px !important;
 }
 
-.js-notice::before {
+.js-notice:not(.js-repository-recommendation)::before {
   @include tooltip-tail;
   content: ' ';
   position: absolute;
@@ -15,7 +15,7 @@
   right: 65px;
 }
 
-.js-notice::after {
+.js-notice:not(.js-repository-recommendation)::after {
   background: url($url-clippy) no-repeat;
   content: ' ';
   height: 94px;

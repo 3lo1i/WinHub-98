@@ -1,12 +1,22 @@
 @import 'variables';
 @import 'mixins';
 
+body > div.Popover {
+  background: transparent !important;
+}
+
+.Popover-message::after {
+  display: none !important;
+}
+
 .tooltipped::after,
+.Popover-message,
 .flash,
-.js-notice {
+.js-notice:not(.js-repository-recommendation) {
   @include tooltip;
 }
 
+.Popover-message::before,
 .tooltipped::before {
   @include tooltip-tail;
 }
@@ -28,7 +38,18 @@
   /* transform: scale(1, 1); */
 }
 
+.Popover-message::before,
 .tooltipped-n,
 .tooltipped-ne::before {
   transform: scale(-1, 1);
+}
+
+.tooltipped-e::before {
+  transform: rotate(90deg);
+  right: -5px;
+}
+
+.tooltipped-w::before {
+  transform: rotate(-90deg);
+  left: -5px;
 }

@@ -60,7 +60,6 @@
 .menu-item:active,
 .social-count:active
 {
-  @include button-pushed-border;
   @include button;
 }
 
@@ -69,30 +68,45 @@
 .pagination em,
 .topic-tag
 {
-  @include button-pushed-border;
   @include button-pushed;
 }
 
-.header-search-input,
-.files,
+.btn:active,
+.filter-item:active,
+.js-repo-topics-form-toggle:active,
+.menu-item:active,
+.social-count:active,
+.filter-item.selected,
+.menu-item.selected,
+.pagination em,
+.topic-tag
+{
+  @include button-pushed-border;
+}
+
+#user-repositories-list li,
 .blankslate,
-.viz,
-.overall-summary,
+.Box,
+.commit-tease-contributors,
+.file .data,
+.files,
+.header-search-input,
+.js-contribution-graph > .border,
+.js-navigation-container,
+.js-repository-recommendation,
 .markdown-body,
-input[type='text'],
-input[type='url'],
+.org-repos li,
+.overall-summary,
+.pinned-repo-item,
+.profile-timeline-card,
+.repository-lang-stats-graph,
+.viz,
 input[type='password'],
 input[type='search'],
-textarea,
-.Box,
-#user-repositories-list li,
-.pinned-repo-item,
-.js-contribution-graph > .border,
-.profile-timeline-card,
-.file .data,
-.js-navigation-container,
-.commit-tease-contributors,
-.repository-lang-stats-graph {
+input[type='text'],
+input[type='url'],
+textarea
+{
   @include input;
 }
 

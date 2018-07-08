@@ -284,3 +284,9 @@ a.link-gray, a.link-gray:hover {
   border: 1px solid black;
   vertical-align: text-top;
 }
+
+.org-repos li,
+.js-repository-recommendation {
+  margin: 5px;
+  padding: 0 15px;
+}
