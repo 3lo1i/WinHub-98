@@ -10,6 +10,16 @@
 @import 'tooltips';
 @import 'clippy';
 
+::-moz-selection {
+  color: $color-highlight-text !important;
+  background: $color-highlight !important;
+}
+
+::selection {
+  color: $color-highlight-text !important;
+  background: $color-highlight !important;
+}
+
 .application-main {
   background-color: $color-window-background;
   padding-bottom: 2px;

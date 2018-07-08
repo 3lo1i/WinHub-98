@@ -594,6 +594,12 @@
     right: 07px;
     bottom: 0;
     margin-bottom: -113px; }
+  ::-moz-selection {
+    color: #ffffff !important;
+    background: #000080 !important; }
+  ::selection {
+    color: #ffffff !important;
+    background: #000080 !important; }
   .application-main {
     background-color: #bdbdbd;
     padding-bottom: 2px; }
