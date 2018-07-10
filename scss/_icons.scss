@@ -1,114 +1,120 @@
 @import 'mixins';
+@import 'resources';
 
-svg.octicon.octicon-history {
-  @include icon-commits;
-}
+.numbers-summary {
+  svg.octicon.octicon-history {
+    @include octicon-replace($url-icon-commits_32, 32px, 32px);
+  }
 
-svg.octicon.octicon-git-branch {
-  @include icon-branches;
-}
+  svg.octicon.octicon-git-branch {
+    @include octicon-replace($url-icon-branches_32, 32px, 32px);
+  }
 
-svg.octicon.octicon-tag {
-  @include icon-releases;
-}
+  svg.octicon.octicon-tag {
+    @include octicon-replace($url-icon-releases_32, 32px, 32px);
+  }
 
-.numbers-summary svg.octicon.octicon-organization {
-  @include icon-contributors;
+  svg.octicon.octicon-organization {
+    @include octicon-replace($url-icon-organization_32, 32px, 32px);
+  }
+
+  svg.octicon.octicon-law {
+    @include octicon-replace($url-icon-law_32, 32px, 32px);
+  }  
 }
 
 svg.octicon.octicon-organization {
-  @include icon-organization;
-}
-
-.numbers-summary svg.octicon.octicon-law {
-  @include icon-law;
+  @include octicon-replace($url-icon-organization, 16px, 16px);
 }
 
 svg.octicon.octicon-law {
-  @include icon-law-small;
+  @include octicon-replace($url-icon-law, 16px, 16px);
 }
 
 svg.octicon.octicon-repo-forked {
-  @include icon-fork;
+  @include octicon-replace($url-icon-fork, 16px, 16px);
 }
 
 svg.octicon.octicon-question {
-  @include icon-question;
+  @include octicon-replace($url-icon-question, 16px, 16px);
 }
 
 svg.octicon.octicon-file-directory {
-  @include icon-directory;
+  @include octicon-replace($url-icon-directory, 16px, 16px);
 }
 
 svg.octicon.octicon-file {
-  @include icon-file;
+  @include octicon-replace($url-icon-file, 16px, 16px);
 }
 
 svg.octicon.octicon-book {
-  @include icon-readme;
+  @include octicon-replace($url-icon-readme, 16px, 16px);
 }
 
 svg.octicon.octicon-repo {
-  @include icon-repository;
+  @include octicon-replace($url-icon-repository, 16px, 16px);
 }
 
 svg.octicon.octicon-trashcan {
-  @include icon-trash;
+  @include octicon-replace($url-icon-trash, 16px, 16px);
 }
 
 svg.octicon.octicon-pencil {
-  @include icon-pencil;
+  @include octicon-replace($url-icon-pencil, 16px, 16px);
 }
 
 svg.octicon.octicon-bell {
-  @include icon-bell;
+  @include octicon-replace($url-icon-bell, 16px, 16px);
 }
 
 svg.octicon.octicon-plus {
-  @include icon-create;
+  @include octicon-replace($url-icon-create, 16px, 16px);
 }
 
 svg.octicon.octicon-mark-github {
-  @include icon-globe;
+  @include octicon-replace($url-icon-globe, 32px, 32px);
 }
 
 svg.octicon.octicon-location {
-  @include icon-location;
+  @include octicon-replace($url-icon-location, 16px, 16px);
 }
 
 svg.octicon.octicon-mute {
-  @include icon-mute;
+  @include octicon-replace($url-icon-mute, 16px, 16px);
 }
 
 svg.octicon.octicon-unmute {
-  @include icon-unmute;
+  @include octicon-replace($url-icon-unmute, 16px, 16px);
 }
 
 svg.octicon.octicon-mail {
-  @include icon-mail;
+  @include octicon-replace($url-icon-mail, 16px, 16px);
 }
 
 svg.octicon.octicon-link {
-  @include icon-link;
+  @include octicon-replace($url-icon-link, 16px, 16px);
 }
 
 svg.octicon.octicon-alert {
-  @include icon-alert;
+  @include octicon-replace($url-icon-alert, 16px, 16px);
 }
 
 svg.octicon.octicon-star {
-  @include icon-star;
+  @include octicon-replace($url-icon-star, 16px, 16px);
 }
 
 svg.octicon.octicon-unfold {
-  @include icon-unfold;
+  @include octicon-replace($url-icon-unfold, 14px, 16px);
 }
+
 svg.octicon.octicon-fold {
-  @include icon-fold;
+  @include octicon-replace($url-icon-fold, 14px, 16px);
 }
+
 svg.octicon.octicon-x {
-  @include icon-x;
+  @include octicon-replace($url-icon-x, 12px, 16px);
 }
+
 svg.octicon.octicon-broadcast {
-  @include icon-broadcast;
+  @include octicon-replace($url-icon-broadcast, 16px, 16px);
 }

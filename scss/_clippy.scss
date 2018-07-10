@@ -16,7 +16,7 @@
 }
 
 .js-notice:not(.js-repository-recommendation)::after {
-  background: url($url-clippy) no-repeat;
+  background: $url-clippy no-repeat;
   content: ' ';
   height: 94px;
   width: 86px;

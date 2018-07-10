@@ -1,7 +1,8 @@
 @import 'variables';
+@import 'resources';
 
 @mixin bitmap-border($border-url, $image-slice, $image-width, $border-radius) {
-  border-image: url($border-url) !important;
+  border-image: $border-url !important;
   border-image-slice: $image-slice !important;
   border-image-width: $image-width !important;
   border-image-outset: 0 !important;
@@ -21,7 +22,7 @@
 }
 
 @mixin tooltip-tail {
-  background: url($url-tooltip-tail) no-repeat !important;
+  background: $url-tooltip-tail no-repeat !important;
   height: 17px !important;
   width: 10px !important;
   border-bottom: none !important;
@@ -91,7 +92,7 @@
 }
 
 @mixin button-pushed {
-  background-image: url($url-button-pushed-background) !important;
+  background-image: $url-button-pushed-background !important;
   background-repeat: repeat;
   background-size: 2px 2px;
   color: $color-text !important;
@@ -109,7 +110,7 @@
 }
 
 @mixin toolbar-grip {
-  background: url($url-toolbar-grip);
+  background: $url-toolbar-grip;
 }
 
 @mixin statusbar {
@@ -121,13 +122,13 @@
 }
 
 @mixin statusbar-grip {
-  background-image: url($url-statusbar-grip);
+  background-image: $url-statusbar-grip;
   background-repeat: no-repeat;
   background-position: 100% 100%;
 }
 
 @mixin octicon-replace($url, $w, $h) {
-  background: url($url);
+  background: $url;
   width: $w;
   height: $h;
   color: transparent !important;
@@ -157,122 +158,6 @@
 @mixin border-top-tabs {
   border-bottom: 1px solid #ffffff !important; 
   box-shadow: 0px 1px 0px 0px #dfdfdf; 
-}
-
-@mixin icon-branches {
-  @include octicon-replace($url-icon-branches, 32px, 32px);
-}
-
-@mixin icon-commits {
-  @include octicon-replace($url-icon-commits, 32px, 32px);
-}
-
-@mixin icon-contributors {
-  @include octicon-replace($url-icon-contributors, 32px, 32px);
-}
-
-@mixin icon-releases {
-  @include octicon-replace($url-icon-releases, 32px, 32px);
-}
-
-@mixin icon-law {
-  @include octicon-replace($url-icon-law, 32px, 32px);
-}
-
-@mixin icon-law-small {
-  @include octicon-replace($url-icon-law-small, 16px, 16px);
-}
-
-@mixin icon-question {
-  @include octicon-replace($url-icon-question, 16px, 16px);
-}
-
-@mixin icon-file {
-  @include octicon-replace($url-icon-file, 16px, 16px);
-}
-
-@mixin icon-directory {
-  @include octicon-replace($url-icon-directory, 16px, 16px);
-}
-
-@mixin icon-readme {
-  @include octicon-replace($url-icon-readme, 16px, 16px);
-}
-
-@mixin icon-repository {
-  @include octicon-replace($url-icon-repository, 16px, 16px);
-}
-
-@mixin icon-organization {
-  @include octicon-replace($url-icon-organization, 16px, 16px);
-}
-
-@mixin icon-trash {
-  @include octicon-replace($url-icon-trash, 16px, 16px);
-}
-
-@mixin icon-pencil {
-  @include octicon-replace($url-icon-pencil, 16px, 16px);
-}
-
-@mixin icon-fork {
-  @include octicon-replace($url-icon-fork, 16px, 16px);
-}
-
-@mixin icon-location {
-  @include octicon-replace($url-icon-location, 16px, 16px);
-}
-
-@mixin icon-create {
-  @include octicon-replace($url-icon-create, 16px, 16px);
-}
-
-@mixin icon-bell {
-  @include octicon-replace($url-icon-bell, 16px, 16px);
-}
-
-@mixin icon-globe {
-  @include octicon-replace($url-icon-globe, 32px, 32px);
-}
-
-@mixin icon-mute {
-  @include octicon-replace($url-icon-mute, 16px, 16px);
-}
-
-@mixin icon-unmute {
-  @include octicon-replace($url-icon-unmute, 16px, 16px);
-}
-
-@mixin icon-mail {
-  @include octicon-replace($url-icon-mail, 16px, 16px);
-}
-
-@mixin icon-link {
-  @include octicon-replace($url-icon-link, 16px, 16px);
-}
-
-@mixin icon-alert {
-  @include octicon-replace($url-icon-alert, 16px, 16px);
-}
-
-@mixin icon-star {
-  @include octicon-replace($url-icon-star, 16px, 16px);
-}
-
-@mixin icon-unfold {
-  @include octicon-replace($url-icon-unfold, 14px, 16px);
-}
-
-@mixin icon-fold {
-  @include octicon-replace($url-icon-fold, 14px, 16px);
-}
-
-@mixin icon-x {
-  @include octicon-replace($url-icon-x, 12px, 16px);
-}
-
-@mixin icon-broadcast {
-  @include octicon-replace($url-icon-broadcast, 16px, 16px);
 }
 
 @mixin m-0 {
