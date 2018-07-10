@@ -39,7 +39,7 @@ body > div.Popover {
 }
 
 .Popover-message::before,
-.tooltipped-n,
+.tooltipped-n::before,
 .tooltipped-ne::before {
   transform: scale(-1, 1);
 }
