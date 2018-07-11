@@ -103,6 +103,10 @@ svg.octicon.octicon-star {
   @include octicon-replace($url-icon-star, 16px, 16px);
 }
 
+svg.octicon.octicon-git-pull-request {
+  @include octicon-replace($url-icon-git-pull-request, 16px, 16px);
+}
+
 svg.octicon.octicon-unfold {
   @include octicon-replace($url-icon-unfold, 14px, 16px);
 }
@@ -117,4 +121,91 @@ svg.octicon.octicon-x {
 
 svg.octicon.octicon-broadcast {
   @include octicon-replace($url-icon-broadcast, 16px, 16px);
+}
+
+svg.octicon.octicon-gear {
+  @include octicon-replace($url-icon-gear, 16px, 16px);
+}
+
+svg.octicon.octicon-project {
+  @include octicon-replace($url-icon-project, 16px, 16px);
+}
+
+svg.octicon.octicon-clippy {
+  @include octicon-replace($url-icon-copy, 15px, 13px);
+}
+
+svg.octicon.octicon-text-size {
+  @include octicon-replace($url-icon-text-size, 14px, 12px);
+}
+
+svg.octicon.octicon-bold {
+  @include octicon-replace($url-icon-bold, 9px, 9px);
+}
+
+svg.octicon.octicon-italic {
+  @include octicon-replace($url-icon-italic, 13px, 9px);
+}
+
+svg.octicon.octicon-list-unordered {
+  @include octicon-replace($url-icon-list-unordered, 14px, 14px);
+}
+
+svg.octicon.octicon-eye {
+  @include octicon-replace($url-icon-eye, 15px, 13px);
+}
+
+svg.octicon.octicon-code {
+  @include octicon-replace($url-icon-code, 16px, 16px);
+}
+
+svg.octicon.octicon-reply {
+  @include octicon-replace($url-icon-reply, 16px, 16px);
+}
+
+svg.octicon.octicon-comment {
+  @include octicon-replace($url-icon-comment, 16px, 16px);
+}
+
+svg.octicon.octicon-lock {
+  @include octicon-replace($url-icon-lock, 16px, 16px);
+}
+
+svg.octicon.octicon-tasklist {
+  @include octicon-replace($url-icon-tasklist, 14px, 14px);
+}
+
+svg.octicon.octicon-mention {
+  @include octicon-replace($url-icon-mention, 16px, 16px);
+}
+
+svg.octicon.octicon-quote {
+  @include octicon-replace($url-icon-quote, 16px, 16px);
+}
+
+svg.octicon.octicon-issue-opened,
+svg.octicon.octicon-issue-reopened,
+svg.octicon.octicon-issue-closed
+{
+  @include octicon-replace($url-icon-issue, 16px, 16px);
+}
+
+svg.octicon.octicon-graph
+{
+  @include octicon-replace($url-icon-graph, 16px, 16px);
+}
+
+svg.octicon.octicon-bookmark
+{
+  @include octicon-replace($url-icon-bookmark, 13px, 13px);
+}
+
+svg.octicon.octicon-check
+{
+  @include octicon-replace($url-icon-check, 14px, 12px);
+}
+
+svg.octicon.octicon-list-ordered
+{
+  @include octicon-replace($url-icon-list-ordered, 14px, 14px);
 }
