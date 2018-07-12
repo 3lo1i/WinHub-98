@@ -324,6 +324,12 @@
     height: 13px;
     color: transparent !important;
     vertical-align: middle; }
+  svg.octicon.octicon-search {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABxUlEQVQ4jZWSP2sbMRjGf+caU4w7FGwwNtcOoZ9AHd16rqEhy8VQAgVDdWu2mw4CXnwfQTcUbvCQj5Gtg8XRoTcFL6ljFwfSQilHO6iDz3LsmP55QCBe6X306Cc57CgIArNb29VisSBJEgegvG/D6elbAJr11r21+P05nucBmCRJnAd3T+50Omfj8ZgkOafRcKH0kFI5p1Z9ZA10+onXr17iPn0GcOasm73RiO8XF9S6XQCOXJcwDBFC0G5XbaLjN+8AyPMcAGfd/GS5JMsyat0ufnHaF9el1+shhABADvosbq6ZzX4AEEXRhkHjccXGlHEMwBAQQnB4+GIF7+YagHa7ak2swfL25waUlKvJcIjW+h5IOegzm11uG/xLgn0qR1HkAIbRyBaFlBwfHBCGIb6v0VpbDusE1qCA4QAmyzLSkxMqlQpBECAHfbTWxDEoxR+TWAVBYObzzMznmRHCGFQxkEZKaZRSxvz6aiaTifE8z5T2mTTrLZr1FpMP3xAxIAGlKNDY19iCeFf646WdKwX+c4GeACh8f/VL1kycfVeYTqdbtTzPSdOUz1dXEAO+j+fd/p3HroQwBrNh8v8OhYkQxjb/BsIDwjar2uADAAAAAElFTkSuQmCC);
+    width: 16px;
+    height: 16px;
+    color: transparent !important;
+    vertical-align: middle; }
   svg.octicon.octicon-check {
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAMCAYAAABSgIzaAAAACXBIWXMAAAsSAAALEgHS3X78AAAAQ0lEQVQoz2NgIAvU/ydLEwiMIE24JHFrYoIFLSNjAwOqIvxBzoiu6P//BrAhCDYjIx6NmDbg0wR1Kgw0MjJQBogLegBGxEBRmNM9BgAAAABJRU5ErkJggg==);
     width: 14px;

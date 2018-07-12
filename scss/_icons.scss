@@ -200,6 +200,11 @@ svg.octicon.octicon-bookmark
   @include octicon-replace($url-icon-bookmark, 13px, 13px);
 }
 
+svg.octicon.octicon-search
+{
+  @include octicon-replace($url-icon-search, 16px, 16px);
+}
+
 svg.octicon.octicon-check
 {
   @include octicon-replace($url-icon-check, 14px, 12px);
