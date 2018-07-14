@@ -34,60 +34,6 @@
   @include tab-container;
 }
 
-.bth:hover,
-.btn:not(:active),
-.filter-item:not(.selected),
-.filter-item:not(:active),
-.js-repo-topics-form-toggle:hover,
-.js-repo-topics-form-toggle:not(:active),
-.js-jump-to-badge-jump:hover,
-.js-jump-to-badge-jump:not(:active),
-.menu-item:hover,
-.menu-item:not(.selected),
-.menu-item:not(:active),
-.pagination a,
-.pagination a:hover,
-.pagination span,
-.social-cont:hover,
-.social-count:not(:active),
-.subnav-links a,
-.subnav-links a:hover
-{
-  @include button-border;
-  @include button;
-}
-
-.btn:active,
-.filter-item:active,
-.js-repo-topics-form-toggle:active,
-.js-jump-to-badge-jump:active,
-.menu-item:active,
-.social-count:active
-{
-  @include button;
-}
-
-.filter-item.selected,
-.menu-item.selected,
-.pagination em,
-.topic-tag
-{
-  @include button-pushed;
-}
-
-.btn:active,
-.filter-item:active,
-.js-repo-topics-form-toggle:active,
-.js-jump-to-badge-jump:active,
-.menu-item:active,
-.social-count:active,
-.filter-item.selected,
-.menu-item.selected,
-.pagination em,
-.topic-tag
-{
-  @include button-pushed-border;
-}
 
 #user-repositories-list li,
 .blankslate,

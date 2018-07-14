@@ -92,7 +92,7 @@
 }
 
 @mixin button-pushed {
-  background-image: $url-button-pushed-background !important;
+  background-image: $url-button-selected-background !important;
   background-repeat: repeat;
   background-size: 2px 2px;
   color: $color-text !important;
@@ -132,7 +132,7 @@
   width: $w;
   height: $h;
   color: transparent !important;
-  vertical-align: middle;
+  vertical-align: baseline;
 }
 
 @mixin border-bottom-separator {
@@ -165,4 +165,35 @@
   margin-bottom: 0 !important;
   margin-left: 0 !important;
   margin-right: 0 !important;
+}
+
+@mixin reset-text-styles {
+  font-weight: normal !important;
+  font-size: inherit !important;
+  opacity: 1 !important;
+  text-decoration: none !important;
+  color: $color-text !important;
+}
+
+@mixin text-disabled {
+  font-weight: normal !important;
+  font-size: inherit !important;
+  opacity: 1 !important;
+  text-decoration: none !important;
+  color: $color-text-disabled !important;
+  text-shadow: 1px 1px $color-text-disabled-shadow;
+}
+
+@mixin reset-borders {
+  outine: none !important;
+  border-top-width: 0 !important;
+  border-bottom-width: 0 !important;
+  border-left-width: 0 !important;
+  border-right-width: 0 !important;
+}
+
+@mixin hotkey {
+  &::first-letter {
+    text-decoration: underline;
+  }
 }

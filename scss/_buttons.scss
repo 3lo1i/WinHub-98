@@ -1,0 +1,163 @@
+@import 'variables';
+@import 'mixins';
+@import 'resources';
+
+%btn-focus {
+  &:not(.tooltipped) {
+    outline: dotted 1px $color-text !important;
+    outline-offset: -4px !important;
+  }
+}
+
+%btn-disabled {
+  @include text-disabled;
+  @include reset-borders;
+
+  &, &:active, &:focus, &:hover {
+    @include bitmap-border-2px($url-button-border);
+    background: $color-button-disabled-background;
+    color: grey !important;
+    outine: none;
+  }
+}
+
+%btn-primary {
+  @include reset-text-styles;
+  @include reset-borders;
+
+  &, &:hover {
+    background: $color-button-primary-background;
+    @include bitmap-border($url-button-primary-border, 3, 3px, 0);    
+  }
+
+  &:active {
+    background: $color-button-primary-pushed-background;
+    @include bitmap-border-2px($url-button-primary-pushed-border);
+  }
+
+  &:focus {
+    @extend %btn-focus;
+  }
+}
+
+%btn-selected {
+  @include reset-text-styles;
+  @include reset-borders;
+
+  &:active {
+    background: $color-button-background;
+  }
+
+  &:not(:active) {
+    background: $url-button-selected-background;
+  }
+
+  @include bitmap-border-2px($url-button-pushed-border);
+
+  &:focus {
+    @extend %btn-focus;
+  }
+}
+
+%btn {
+  &, &:hover {
+    background: $color-button-background;
+    @include reset-text-styles;
+    @include reset-borders;
+    @include bitmap-border-2px($url-button-border);
+    min-width: 30px;
+  }
+
+  i, span, b, em, strong {
+    @include reset-text-styles;
+  }
+
+  &:active {
+    background: $color-button-pushed-background;
+    @include bitmap-border-2px($url-button-pushed-border);
+  }
+
+  &:focus {
+    @extend %btn-focus;
+  }
+
+  &.disabled, &:disabled {
+    @extend %btn-disabled;
+  }
+
+  &.btn-primary {
+    @extend %btn-primary;
+  }
+
+  &.selected {
+    @extend %btn-selected;
+  }
+}
+
+%toolbar-btn {
+  @include reset-text-styles;
+}
+
+.table-list-header-toggle .select-menu-button {
+  @extend %toolbar-btn;
+  padding: 10px;
+  margin: 4px;
+
+  border: 1px solid transparent;
+
+  &:hover {
+    border-top: 1px solid $color-border-light;
+    border-left: 1px solid $color-border-light;
+    border-bottom: 1px solid $color-border-dark;
+    border-right: 1px solid $color-border-dark;
+  }
+
+  &:active {
+    border-top: 1px solid $color-border-dark;
+    border-left: 1px solid $color-border-dark;
+    border-bottom: 1px solid $color-border-light;
+    border-right: 1px solid $color-border-light;    
+  }
+}
+
+.btn,
+.filter-item,
+.js-jump-to-badge-jump,
+.js-repo-topics-form-toggle,
+.menu-item,
+.social-count,
+.subnav-links a,
+.toolbar-item
+{
+  @extend %btn;
+}
+
+.btn {
+  @include hotkey;
+}
+
+.topic-tag {
+  @extend %btn-selected;
+}
+
+.toolbar-item {
+  text-align: center;
+}
+
+.pagination {
+  a, em, span {
+    margin-left: 0;
+  }
+
+  a {
+    @extend %btn;
+  }
+
+  em, .current {
+    @extend %btn-selected;
+  }
+
+  span, .disabled, .gap {
+    @extend %btn-disabled;
+  }
+}
