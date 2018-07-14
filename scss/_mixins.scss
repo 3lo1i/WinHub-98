@@ -136,23 +136,23 @@
 }
 
 @mixin border-bottom-separator {
-  border-bottom: 1px solid #7b7b7b !important;
-  box-shadow: 0px 1px 0px 0px #ffffff;
+  border-bottom: 1px solid $color-border-dark !important;
+  box-shadow: 0px 1px 0px 0px $color-border-light;
 }
 
 @mixin border-top-separator {
-  border-top: 1px solid #7b7b7b !important;
-  box-shadow: 0px -1px 0px 0px #ffffff;
+  border-top: 1px solid $color-border-dark !important;
+  box-shadow: 0px -1px 0px 0px $color-border-light;
 }
 
 @mixin border-right-separator {
-  border-right: 1px solid #7b7b7b !important;
-  box-shadow: 1px 0px 0px 0px #ffffff;
+  border-right: 1px solid $color-border-dark !important;
+  box-shadow: 1px 0px 0px 0px $color-border-light;
 }
 
 @mixin border-left-separator {
-  border-left: 1px solid #7b7b7b !important;
-  box-shadow: -1px 0px 0px 0px #ffffff;
+  border-left: 1px solid $color-border-dark !important;
+  box-shadow: -1px 0px 0px 0px $color-border-light;
 }
 
 @mixin border-top-tabs {

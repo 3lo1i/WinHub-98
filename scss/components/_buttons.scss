@@ -1,6 +1,6 @@
-@import 'variables';
-@import 'mixins';
-@import 'resources';
+@import '../variables';
+@import '../mixins';
+@import '../resources';
 
 %btn-focus {
   &:not(.tooltipped) {

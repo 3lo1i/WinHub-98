@@ -1,16 +1,16 @@
 @import 'variables';
 @import 'mixins';
 @import 'body';
-@import 'wiki';
+@import 'pages/wiki';
 @import 'icons';
 @import 'borders';
 @import 'footer';
 @import 'reset';
-@import 'tabs';
-@import 'tooltips';
-@import 'dropdowns';
-@import 'clippy';
-@import 'buttons';
+@import 'components/tabs';
+@import 'components/tooltips';
+@import 'components/dropdowns';
+@import 'optional/clippy';
+@import 'components/buttons';
 
 ::-moz-selection {
   color: $color-highlight-text !important;

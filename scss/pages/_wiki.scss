@@ -1,5 +1,5 @@
-@import 'variables';
-@import 'mixins';
+@import '../variables';
+@import '../mixins';
 
 .wiki-empty-box, .wiki-empty-box:hover {
   color: $color-text !important;
