@@ -52,7 +52,9 @@
     background: $url-button-selected-background;
   }
 
-  @include bitmap-border-2px($url-button-pushed-border);
+  &, &:hover {
+    @include bitmap-border-2px($url-button-pushed-border);
+  }
 
   &:focus {
     @extend %btn-focus;
@@ -134,6 +136,11 @@
 
 .btn {
   @include hotkey;
+}
+
+.timeline-comment-header .btn-link {
+  @extend %btn;
+  padding: 5px;
 }
 
 .topic-tag {

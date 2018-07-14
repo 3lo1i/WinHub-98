@@ -141,8 +141,8 @@
 }
 
 @mixin border-top-separator {
-  border-top: 1px solid $color-border-dark !important;
-  box-shadow: 0px -1px 0px 0px $color-border-light;
+  border-top: 1px solid $color-border-light !important;
+  box-shadow: 0px -1px 0px 0px $color-border-dark;
 }
 
 @mixin border-right-separator {

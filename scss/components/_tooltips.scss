@@ -12,7 +12,7 @@ body > div.Popover {
 .tooltipped::after,
 .Popover-message,
 .flash,
-.js-notice:not(.js-repository-recommendation) {
+.js-notice:not(.js-repository-recommendation):not(summary) {
   @include tooltip;
 }
 

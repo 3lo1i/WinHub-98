@@ -1,27 +1,33 @@
 @import '../variables';
 @import '../mixins';
 
-.js-notice:not(.js-repository-recommendation) {
-  position: relative;
-  margin-bottom: 120px !important;
+%clippy {
+  & {
+    position: relative;
+    margin-bottom: 120px !important;
+  }
+
+  &::before {
+    @include tooltip-tail;
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -16px;
+    right: 65px;
+  }
+
+  &::after {
+    background: $url-clippy no-repeat;
+    content: ' ';
+    height: 94px;
+    width: 86px;
+    position: absolute;
+    right: 07px;
+    bottom: 0;
+    margin-bottom: -113px;
+  }
 }
 
-.js-notice:not(.js-repository-recommendation)::before {
-  @include tooltip-tail;
-  content: ' ';
-  position: absolute;
-  bottom: 0;
-  margin-bottom: -16px;
-  right: 65px;
-}
-
-.js-notice:not(.js-repository-recommendation)::after {
-  background: $url-clippy no-repeat;
-  content: ' ';
-  height: 94px;
-  width: 86px;
-  position: absolute;
-  right: 07px;
-  bottom: 0;
-  margin-bottom: -113px;
+.js-notice:not(.js-repository-recommendation):not(summary) {
+  @extend %clippy;
 }

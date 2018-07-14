@@ -192,7 +192,7 @@ a.link-gray, a.link-gray:hover {
 }
 
 .discussion-timeline {
-  width: auto;
+  width: 0;
   float: none;
   flex-grow: 1;
   position: static;
@@ -209,6 +209,10 @@ a.link-gray, a.link-gray:hover {
 
 .timeline-new-comment {
   padding-top: 10px;
+}
+
+.timeline-comment-action {
+  margin-top: 10px;
 }
 
 #repos h2 {

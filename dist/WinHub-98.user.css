@@ -455,8 +455,8 @@
   .discussion-sidebar-item + .discussion-sidebar-item,
   .discussion-item + .discussion-item,
   .discussion-item-review + .discussion-item {
-    border-top: 1px solid #7b7b7b !important;
-    box-shadow: 0px -1px 0px 0px #ffffff; }
+    border-top: 1px solid #ffffff !important;
+    box-shadow: 0px -1px 0px 0px #7b7b7b; }
   .reaction-summary-item,
   .comment-reactions .add-reaction-btn {
     border-right: 1px solid #7b7b7b !important;
@@ -618,7 +618,7 @@
   .tooltipped::after,
   .Popover-message,
   .flash,
-  .js-notice:not(.js-repository-recommendation) {
+  .js-notice:not(.js-repository-recommendation):not(summary) {
     border-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAC4jAAAuIwF4pT92AAAApUlEQVQ4Ea2SUQ6AIAxDmWfy/ifwTsgWu3SLKBD4EIbtS6eT8r1qei2p9vLtRTDXeplY5HTTcwjeUDSBQWDOTtQEdb8fRiE9GEBDSQDBzskOXP61Ax3v7HEQC1bOCgp/aQWiDEvEEWdB8G5trdDXnw3kXk2EEZiGkEH2tqbklfbYw21NTTdBjMEgDTYEyxDrSB9phQHFnJAZ8hAiFFDQHqDtvqu/AW3ALBxMEm+AAAAAAElFTkSuQmCC) !important;
     border-image-slice: 8 !important;
     border-image-width: 8px !important;
@@ -735,10 +735,10 @@
         padding: 4px !important; }
   #jump-to-results {
     border: none !important; }
-  .js-notice:not(.js-repository-recommendation) {
+  .js-notice:not(.js-repository-recommendation):not(summary) {
     position: relative;
     margin-bottom: 120px !important; }
-  .js-notice:not(.js-repository-recommendation)::before {
+  .js-notice:not(summary):not(.js-repository-recommendation)::before {
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAARAgMAAACZTdV2AAAACVBMVEUAAAD//8wAAACRWNQ+AAAAAXRSTlMAQObYZgAAADVJREFUCNcVw6ERADAIA8AcrkxRU8E2NXiWwtewZ5O/e2RedBaGgxc7Wxegw4eDnU0fAN36Af4ADEfDXfSsAAAAAElFTkSuQmCC) no-repeat !important;
     height: 17px !important;
     width: 10px !important;
@@ -751,7 +751,7 @@
     bottom: 0;
     margin-bottom: -16px;
     right: 65px; }
-  .js-notice:not(.js-repository-recommendation)::after {
+  .js-notice:not(summary):not(.js-repository-recommendation)::after {
     background: url(data:image/png;base64,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) no-repeat;
     content: ' ';
     height: 94px;
@@ -767,7 +767,7 @@
   .menu-item:not(.tooltipped):focus,
   .social-count:not(.tooltipped):focus,
   .subnav-links a:not(.tooltipped):focus,
-  .toolbar-item:not(.tooltipped):focus, .pagination a:not(.tooltipped):focus {
+  .toolbar-item:not(.tooltipped):focus, .timeline-comment-header .btn-link:not(.tooltipped):focus, .pagination a:not(.tooltipped):focus {
     outline: dotted 1px #000000 !important;
     outline-offset: -4px !important; }
   .disabled.btn,
@@ -777,14 +777,14 @@
   .disabled.menu-item,
   .disabled.social-count,
   .subnav-links a.disabled,
-  .disabled.toolbar-item, .btn:disabled,
+  .disabled.toolbar-item, .timeline-comment-header .disabled.btn-link, .btn:disabled,
   .filter-item:disabled,
   .js-jump-to-badge-jump:disabled,
   .js-repo-topics-form-toggle:disabled,
   .menu-item:disabled,
   .social-count:disabled,
   .subnav-links a:disabled,
-  .toolbar-item:disabled, .pagination a:disabled, .pagination span, .pagination .disabled, .pagination .gap {
+  .toolbar-item:disabled, .timeline-comment-header .btn-link:disabled, .pagination a:disabled, .pagination span, .pagination .disabled, .pagination .gap {
     font-weight: normal !important;
     font-size: inherit !important;
     opacity: 1 !important;
@@ -803,56 +803,56 @@
     .disabled.menu-item,
     .disabled.social-count,
     .subnav-links a.disabled,
-    .disabled.toolbar-item, .btn:disabled,
+    .disabled.toolbar-item, .timeline-comment-header .disabled.btn-link, .btn:disabled,
     .filter-item:disabled,
     .js-jump-to-badge-jump:disabled,
     .js-repo-topics-form-toggle:disabled,
     .menu-item:disabled,
     .social-count:disabled,
     .subnav-links a:disabled,
-    .toolbar-item:disabled, .pagination a:disabled, .pagination span, .pagination .disabled, .pagination .gap, .disabled.btn:active,
+    .toolbar-item:disabled, .timeline-comment-header .btn-link:disabled, .pagination a:disabled, .pagination span, .pagination .disabled, .pagination .gap, .disabled.btn:active,
     .disabled.filter-item:active,
     .disabled.js-jump-to-badge-jump:active,
     .disabled.js-repo-topics-form-toggle:active,
     .disabled.menu-item:active,
     .disabled.social-count:active,
     .subnav-links a.disabled:active,
-    .disabled.toolbar-item:active, .btn:active:disabled,
+    .disabled.toolbar-item:active, .timeline-comment-header .disabled.btn-link:active, .btn:active:disabled,
     .filter-item:active:disabled,
     .js-jump-to-badge-jump:active:disabled,
     .js-repo-topics-form-toggle:active:disabled,
     .menu-item:active:disabled,
     .social-count:active:disabled,
     .subnav-links a:active:disabled,
-    .toolbar-item:active:disabled, .pagination a:active:disabled, .pagination span:active, .pagination .disabled:active, .pagination .gap:active, .disabled.btn:focus,
+    .toolbar-item:active:disabled, .timeline-comment-header .btn-link:active:disabled, .pagination a:active:disabled, .pagination span:active, .pagination .disabled:active, .pagination .gap:active, .disabled.btn:focus,
     .disabled.filter-item:focus,
     .disabled.js-jump-to-badge-jump:focus,
     .disabled.js-repo-topics-form-toggle:focus,
     .disabled.menu-item:focus,
     .disabled.social-count:focus,
     .subnav-links a.disabled:focus,
-    .disabled.toolbar-item:focus, .btn:focus:disabled,
+    .disabled.toolbar-item:focus, .timeline-comment-header .disabled.btn-link:focus, .btn:focus:disabled,
     .filter-item:focus:disabled,
     .js-jump-to-badge-jump:focus:disabled,
     .js-repo-topics-form-toggle:focus:disabled,
     .menu-item:focus:disabled,
     .social-count:focus:disabled,
     .subnav-links a:focus:disabled,
-    .toolbar-item:focus:disabled, .pagination a:focus:disabled, .pagination span:focus, .pagination .disabled:focus, .pagination .gap:focus, .disabled.btn:hover,
+    .toolbar-item:focus:disabled, .timeline-comment-header .btn-link:focus:disabled, .pagination a:focus:disabled, .pagination span:focus, .pagination .disabled:focus, .pagination .gap:focus, .disabled.btn:hover,
     .disabled.filter-item:hover,
     .disabled.js-jump-to-badge-jump:hover,
     .disabled.js-repo-topics-form-toggle:hover,
     .disabled.menu-item:hover,
     .disabled.social-count:hover,
     .subnav-links a.disabled:hover,
-    .disabled.toolbar-item:hover, .btn:hover:disabled,
+    .disabled.toolbar-item:hover, .timeline-comment-header .disabled.btn-link:hover, .btn:hover:disabled,
     .filter-item:hover:disabled,
     .js-jump-to-badge-jump:hover:disabled,
     .js-repo-topics-form-toggle:hover:disabled,
     .menu-item:hover:disabled,
     .social-count:hover:disabled,
     .subnav-links a:hover:disabled,
-    .toolbar-item:hover:disabled, .pagination a:hover:disabled, .pagination span:hover, .pagination .disabled:hover, .pagination .gap:hover {
+    .toolbar-item:hover:disabled, .timeline-comment-header .btn-link:hover:disabled, .pagination a:hover:disabled, .pagination span:hover, .pagination .disabled:hover, .pagination .gap:hover {
       border-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAACXBIWXMAAAsSAAALEgHS3X78AAAALUlEQVQI12P8DwQMSICRkZGBBcR48OABWGDhwoVgmokBC2BBVgE3Aoj/o6sEAEKiC3F8660sAAAAAElFTkSuQmCC) !important;
       border-image-slice: 2 !important;
       border-image-width: 2px !important;
@@ -869,7 +869,7 @@
   .btn-primary.menu-item,
   .btn-primary.social-count,
   .subnav-links a.btn-primary,
-  .btn-primary.toolbar-item, .pagination a.btn-primary {
+  .btn-primary.toolbar-item, .timeline-comment-header .btn-primary.btn-link, .pagination a.btn-primary {
     font-weight: normal !important;
     font-size: inherit !important;
     opacity: 1 !important;
@@ -887,14 +887,14 @@
     .btn-primary.menu-item,
     .btn-primary.social-count,
     .subnav-links a.btn-primary,
-    .btn-primary.toolbar-item, .pagination a.btn-primary, .btn-primary.btn:hover,
+    .btn-primary.toolbar-item, .timeline-comment-header .btn-primary.btn-link, .pagination a.btn-primary, .btn-primary.btn:hover,
     .btn-primary.filter-item:hover,
     .btn-primary.js-jump-to-badge-jump:hover,
     .btn-primary.js-repo-topics-form-toggle:hover,
     .btn-primary.menu-item:hover,
     .btn-primary.social-count:hover,
     .subnav-links a.btn-primary:hover,
-    .btn-primary.toolbar-item:hover, .pagination a.btn-primary:hover {
+    .btn-primary.toolbar-item:hover, .timeline-comment-header .btn-primary.btn-link:hover, .pagination a.btn-primary:hover {
       background: #bdbdbd;
       border-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAACXBIWXMAAAsSAAALEgHS3X78AAAANklEQVQI12NkYGD4z4ADsICI//9R5RkZGRGSIPDgwQMwvXDhQrgiJgY8AK4TWQfceHwOwmssAOCsC3fVDMWIAAAAAElFTkSuQmCC) !important;
       border-image-slice: 3 !important;
@@ -909,7 +909,7 @@
     .btn-primary.menu-item:active,
     .btn-primary.social-count:active,
     .subnav-links a.btn-primary:active,
-    .btn-primary.toolbar-item:active, .pagination a.btn-primary:active {
+    .btn-primary.toolbar-item:active, .timeline-comment-header .btn-primary.btn-link:active, .pagination a.btn-primary:active {
       background: #bdbdbd;
       border-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAACXBIWXMAAAsSAAALEgHS3X78AAAAIklEQVQI12NkYGD4z4AGWEBEQ0MDXADEZmLAArAKMmIzEwBQogUJb6FtrAAAAABJRU5ErkJggg==) !important;
       border-image-slice: 2 !important;
@@ -924,7 +924,7 @@
   .selected.menu-item,
   .selected.social-count,
   .subnav-links a.selected,
-  .selected.toolbar-item, .pagination a.selected, .topic-tag, .pagination em, .pagination .current {
+  .selected.toolbar-item, .timeline-comment-header .selected.btn-link, .pagination a.selected, .topic-tag, .pagination em, .pagination .current {
     font-weight: normal !important;
     font-size: inherit !important;
     opacity: 1 !important;
@@ -934,13 +934,7 @@
     border-top-width: 0 !important;
     border-bottom-width: 0 !important;
     border-left-width: 0 !important;
-    border-right-width: 0 !important;
-    border-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAABHNCSVQICAgIfAhkiAAAADFJREFUCJldzMEJACAMBMFR7DOlJJ3HhyDoPne5G2gfCzLziqo6EiLihvlPYaC739sNuAoJInXOKV8AAAAASUVORK5CYII=) !important;
-    border-image-slice: 2 !important;
-    border-image-width: 2px !important;
-    border-image-outset: 0 !important;
-    border-image-repeat: stretch !important;
-    border-radius: 0 !important; }
+    border-right-width: 0 !important; }
     .selected.btn:active,
     .selected.filter-item:active,
     .selected.js-jump-to-badge-jump:active,
@@ -948,7 +942,7 @@
     .selected.menu-item:active,
     .selected.social-count:active,
     .subnav-links a.selected:active,
-    .selected.toolbar-item:active, .pagination a.selected:active, .topic-tag:active, .pagination em:active, .pagination .current:active {
+    .selected.toolbar-item:active, .timeline-comment-header .selected.btn-link:active, .pagination a.selected:active, .topic-tag:active, .pagination em:active, .pagination .current:active {
       background: #bdbdbd; }
     .selected.btn:not(:active),
     .selected.filter-item:not(:active),
@@ -957,8 +951,29 @@
     .selected.menu-item:not(:active),
     .selected.social-count:not(:active),
     .subnav-links a.selected:not(:active),
-    .selected.toolbar-item:not(:active), .pagination a.selected:not(:active), .topic-tag:not(:active), .pagination em:not(:active), .pagination .current:not(:active) {
+    .selected.toolbar-item:not(:active), .timeline-comment-header .selected.btn-link:not(:active), .pagination a.selected:not(:active), .topic-tag:not(:active), .pagination em:not(:active), .pagination .current:not(:active) {
       background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACAQMAAABIeJ9nAAAABlBMVEW9vb3///8EwsWUAAAADElEQVQI12NoYHAAAAHEAMFJRSpJAAAAAElFTkSuQmCC); }
+    .selected.btn,
+    .selected.filter-item,
+    .selected.js-jump-to-badge-jump,
+    .selected.js-repo-topics-form-toggle,
+    .selected.menu-item,
+    .selected.social-count,
+    .subnav-links a.selected,
+    .selected.toolbar-item, .timeline-comment-header .selected.btn-link, .pagination a.selected, .topic-tag, .pagination em, .pagination .current, .selected.btn:hover,
+    .selected.filter-item:hover,
+    .selected.js-jump-to-badge-jump:hover,
+    .selected.js-repo-topics-form-toggle:hover,
+    .selected.menu-item:hover,
+    .selected.social-count:hover,
+    .subnav-links a.selected:hover,
+    .selected.toolbar-item:hover, .timeline-comment-header .selected.btn-link:hover, .pagination a.selected:hover, .topic-tag:hover, .pagination em:hover, .pagination .current:hover {
+      border-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAABHNCSVQICAgIfAhkiAAAADFJREFUCJldzMEJACAMBMFR7DOlJJ3HhyDoPne5G2gfCzLziqo6EiLihvlPYaC739sNuAoJInXOKV8AAAAASUVORK5CYII=) !important;
+      border-image-slice: 2 !important;
+      border-image-width: 2px !important;
+      border-image-outset: 0 !important;
+      border-image-repeat: stretch !important;
+      border-radius: 0 !important; }
   .btn,
   .filter-item,
   .js-jump-to-badge-jump,
@@ -966,14 +981,14 @@
   .menu-item,
   .social-count,
   .subnav-links a,
-  .toolbar-item, .pagination a, .btn:hover,
+  .toolbar-item, .timeline-comment-header .btn-link, .pagination a, .btn:hover,
   .filter-item:hover,
   .js-jump-to-badge-jump:hover,
   .js-repo-topics-form-toggle:hover,
   .menu-item:hover,
   .social-count:hover,
   .subnav-links a:hover,
-  .toolbar-item:hover, .pagination a:hover {
+  .toolbar-item:hover, .timeline-comment-header .btn-link:hover, .pagination a:hover {
     background: #bdbdbd;
     font-weight: normal !important;
     font-size: inherit !important;
@@ -992,7 +1007,7 @@
     border-image-repeat: stretch !important;
     border-radius: 0 !important;
     min-width: 30px; }
-  .btn i, .filter-item i, .js-jump-to-badge-jump i, .js-repo-topics-form-toggle i, .menu-item i, .social-count i, .subnav-links a i, .toolbar-item i, .pagination a i, .btn span, .filter-item span, .js-jump-to-badge-jump span, .js-repo-topics-form-toggle span, .menu-item span, .social-count span, .subnav-links a span, .toolbar-item span, .pagination a span, .btn b, .filter-item b, .js-jump-to-badge-jump b, .js-repo-topics-form-toggle b, .menu-item b, .social-count b, .subnav-links a b, .toolbar-item b, .pagination a b, .btn em, .filter-item em, .js-jump-to-badge-jump em, .js-repo-topics-form-toggle em, .menu-item em, .social-count em, .subnav-links a em, .toolbar-item em, .pagination a em, .btn strong, .filter-item strong, .js-jump-to-badge-jump strong, .js-repo-topics-form-toggle strong, .menu-item strong, .social-count strong, .subnav-links a strong, .toolbar-item strong, .pagination a strong {
+  .btn i, .filter-item i, .js-jump-to-badge-jump i, .js-repo-topics-form-toggle i, .menu-item i, .social-count i, .subnav-links a i, .toolbar-item i, .timeline-comment-header .btn-link i, .pagination a i, .btn span, .filter-item span, .js-jump-to-badge-jump span, .js-repo-topics-form-toggle span, .menu-item span, .social-count span, .subnav-links a span, .toolbar-item span, .timeline-comment-header .btn-link span, .pagination a span, .btn b, .filter-item b, .js-jump-to-badge-jump b, .js-repo-topics-form-toggle b, .menu-item b, .social-count b, .subnav-links a b, .toolbar-item b, .timeline-comment-header .btn-link b, .pagination a b, .btn em, .filter-item em, .js-jump-to-badge-jump em, .js-repo-topics-form-toggle em, .menu-item em, .social-count em, .subnav-links a em, .toolbar-item em, .timeline-comment-header .btn-link em, .pagination a em, .btn strong, .filter-item strong, .js-jump-to-badge-jump strong, .js-repo-topics-form-toggle strong, .menu-item strong, .social-count strong, .subnav-links a strong, .toolbar-item strong, .timeline-comment-header .btn-link strong, .pagination a strong {
     font-weight: normal !important;
     font-size: inherit !important;
     opacity: 1 !important;
@@ -1005,7 +1020,7 @@
   .menu-item:active,
   .social-count:active,
   .subnav-links a:active,
-  .toolbar-item:active, .pagination a:active {
+  .toolbar-item:active, .timeline-comment-header .btn-link:active, .pagination a:active {
     background: #bdbdbd;
     border-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAABHNCSVQICAgIfAhkiAAAADFJREFUCJldzMEJACAMBMFR7DOlJJ3HhyDoPne5G2gfCzLziqo6EiLihvlPYaC739sNuAoJInXOKV8AAAAASUVORK5CYII=) !important;
     border-image-slice: 2 !important;
@@ -1035,6 +1050,8 @@
       border-right: 1px solid #ffffff; }
   .btn::first-letter {
     text-decoration: underline; }
+  .timeline-comment-header .btn-link {
+    padding: 5px; }
   .toolbar-item {
     text-align: center; }
   .pagination a, .pagination em, .pagination span {
@@ -1149,7 +1166,7 @@
     display: flex;
     flex-direction: row-reverse; }
   .discussion-timeline {
-    width: auto;
+    width: 0;
     float: none;
     flex-grow: 1;
     position: static;
@@ -1162,6 +1179,8 @@
     border-bottom: none; }
   .timeline-new-comment {
     padding-top: 10px; }
+  .timeline-comment-action {
+    margin-top: 10px; }
   #repos h2 {
     margin: 10px 0; }
   .topic-tag {
