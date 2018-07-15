@@ -1,5 +1,59 @@
-@import '../variables';
-@import '../mixins';
+%border-top-tabs {
+  border-bottom: 1px solid #ffffff !important; 
+  box-shadow: 0px 1px 0px 0px #dfdfdf; 
+}
+
+%tab {
+  @include bitmap-border-2px($url-tab-border);
+  @include reset-text-styles;
+  background-color: $color-window-background !important;
+  padding: 0 5px 5px;
+}
+
+%tab-container {
+  @include bitmap-border-2px($url-tab-container-border);
+  background-color: $color-window-background !important;
+  padding: 10px;
+}
+
+.tabnav-tab,
+.UnderlineNav-item,
+.UnderlineNav-item.selected,
+.select-menu-tabs a,
+.reponav-item {
+  @extend %tab;
+  z-index: 1;
+}
+
+.tabnav ~ .is-visible,
+.UnderlineNav + .position-relative,
+.tabnav + .gutter,
+.tabnav + .follow-list,
+.tabnav + .blankslate,
+.timeline-comment .write-content,
+.timeline-comment .preview-content,
+.repository-content {
+  @extend %tab-container;
+}
+
+.news .UnderlineNav {
+  @extend %border-top-tabs;
+}
+
+.select-menu-tabs,
+.application-main .UnderlineNav
+{  
+  @extend %border-top-tabs;
+  margin-bottom: -1px;
+}
+
+.UnderlineNav.is-stuck {
+  padding-top: 10px;
+}
+
+.UnderlineNav + .position-relative {
+  border-top: none !important;
+}
 
 .tabnav,
 .timeline-new-comment .comment-form-head {

@@ -1,21 +1,10 @@
-/* Border images are encoded as base64, therefore urls have big length.
- * Use only one @include for each mixin to minimize resulting file size.
- */
-
-.tabnav-tab,
-.UnderlineNav-item,
-.UnderlineNav-item.selected,
-.select-menu-tabs a,
-.reponav-item {
-  @include tab;
-  z-index: 1;
-}
-
 .table-list-header,
 .timeline-comment-header,
 .file-header,
 .tag-input,
+.thread-subscription-status,
 .pr-toolbar,
+.full-commit,
 .branch-infobar,
 .auth-form-body,
 .drag-and-drop,
@@ -23,17 +12,9 @@
   @include toolbar;
 }
 
-.tabnav ~ .is-visible,
-.UnderlineNav + .position-relative,
-.tabnav + .gutter,
-.tabnav + .follow-list,
-.tabnav + .blankslate,
-.timeline-comment .write-content,
-.timeline-comment .preview-content,
-.repository-content {
-  @include tab-container;
+.commit-desc + .commit-branches {
+  @include border-top-separator;
 }
-
 
 #user-repositories-list li,
 .blankslate,
@@ -105,23 +86,4 @@ hr {
 .reaction-summary-item,
 .comment-reactions .add-reaction-btn {  
   @include border-right-separator;
-}
-
-.news .UnderlineNav {
-  @include border-top-tabs;
-}
-
-.select-menu-tabs,
-.application-main .UnderlineNav
-{  
-  @include border-top-tabs;
-  margin-bottom: -1px;
-}
-
-.UnderlineNav.is-stuck {
-  padding-top: 10px;
-}
-
-.UnderlineNav + .position-relative {
-  border-top: none !important;
 }
