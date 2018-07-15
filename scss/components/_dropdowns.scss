@@ -44,6 +44,10 @@
   @include border-bottom-separator;
 }
 
+.dropdown-header {
+  @include text-disabled;
+}
+
 .select-menu-item.selected {
   color: $color-text;
 }

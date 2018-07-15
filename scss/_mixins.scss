@@ -109,7 +109,7 @@
   width: $w;
   height: $h;
   color: transparent !important;
-  vertical-align: baseline;
+  vertical-align: baseline !important;
 }
 
 @mixin border-bottom-separator {

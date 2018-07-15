@@ -303,3 +303,7 @@ a.link-gray, a.link-gray:hover {
   margin: 5px;
   padding: 0 15px;
 }
+
+.select-menu-no-results {
+  @include text-disabled;
+}
