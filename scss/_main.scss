@@ -53,13 +53,43 @@
   margin-bottom: 0;
 }
 
-.commit-id:hover, .commit-id,
+%link {
+  &, &:hover {
+    color: $color-link;
+    text-decoration: underline;
+  }
+}
+
+.btn-link,
+.commit-id,
 .timeline-commits .commit-message > code a,
-.timeline-commits .commit-message > code a:hover,
-.btn-link, .btn-link:hover,
-a, a:hover, {
-  color: $color-link;
-  text-decoration: underline;
+a,
+a.tabnav-extra, a.tabnav-extra:hover,
+.commit .commit-title .issue-link,
+{
+  @extend %link;
+}
+
+.full-commit .branches-list li.pull-request,
+.full-commit .branches-list li,
+.commit-branches,
+.commit-desc pre {
+  @include reset-text-styles;
+  a {
+    @extend %link;
+  }
+}
+
+.full-commit .commit-meta {
+  background: inherit;
+  border-radius: 0;
+  @include border-top-separator;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.full-commit p.commit-title {
+  color: $color-text;
 }
 
 .muted-link, .muted-link:hover,
