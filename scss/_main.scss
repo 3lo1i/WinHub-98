@@ -337,3 +337,11 @@ a.link-gray, a.link-gray:hover {
 .select-menu-no-results {
   @include text-disabled;
 }
+
+.pr-toolbar.is-stuck + .pr-toolbar-shadow {
+  display: none;
+}
+
+.diffbar {
+  background-color: transparent;
+}

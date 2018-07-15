@@ -171,4 +171,5 @@ hr{border:1px solid;border-top-color:#7b7b7b;border-bottom-color:#fff;border-lef
 .timeline-comment-wrapper{padding-left:5px;padding:5px}.closed-banner{display:none}
 .comment-form-head{margin-top:30px}.repo-language-color,.repository-lang-stats ol.repository-lang-stats-numbers li .language-color{width:16px;height:16px;border-radius:0;border:1px solid black;vertical-align:text-top}
 .org-repos li,.js-repository-recommendation{margin:5px;padding:0 15px}.select-menu-no-results{font-weight:normal !important;font-size:inherit !important;opacity:1 !important;text-decoration:none !important;color:#7b7b7b !important;text-shadow:1px 1px #fff}
+.pr-toolbar.is-stuck+.pr-toolbar-shadow{display:none}.diffbar{background-color:transparent}
 }
