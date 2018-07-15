@@ -19,6 +19,7 @@
 .tabnav-tab,
 .UnderlineNav-item,
 .UnderlineNav-item.selected,
+.pagehead-tabs-item,
 .select-menu-tabs a,
 .reponav-item {
   @extend %tab;
@@ -36,6 +37,26 @@
   @extend %tab-container;
 }
 
+.orghead {
+  background-color: inherit;
+  @include reset-text-styles;
+
+  .orgnav {
+    bottom: 3px;
+    top: unset;
+  }
+
+  .pagehead-tabs-item.selected {
+    top: 0;
+  }
+
+  .pagehead-tabs-item {
+    top: 3px;
+    position: relative;    
+  }
+}
+
+.orghead,
 .news .UnderlineNav {
   @extend %border-top-tabs;
 }
@@ -76,6 +97,7 @@
 
 .UnderlineNav-item.selected,
 .tabnav-tab.selected,
+.pagehead-tabs-item.selected,
 .select-menu-tabs a.selected,
 .reponav-item.selected {
   bottom: 4px;

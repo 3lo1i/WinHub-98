@@ -16,6 +16,14 @@
   @include border-top-separator;
 }
 
+.table-list-cell {
+  @include border-top-separator;
+}
+
+.table-list {
+  @include border-bottom-separator;
+}
+
 #user-repositories-list li,
 .blankslate,
 .Box:not(.jump-to-suggestions),
