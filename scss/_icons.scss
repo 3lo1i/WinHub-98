@@ -1,6 +1,3 @@
-@import 'mixins';
-@import 'resources';
-
 .numbers-summary {
   svg.octicon.octicon-history {
     @include octicon-replace($url-icon-commits_32, 32px, 32px);

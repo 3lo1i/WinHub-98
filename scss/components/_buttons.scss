@@ -1,7 +1,3 @@
-@import '../variables';
-@import '../mixins';
-@import '../resources';
-
 %btn-focus {
   &:not(.tooltipped) {
     outline: dotted 1px $color-text !important;

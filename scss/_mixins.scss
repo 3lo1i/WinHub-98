@@ -1,6 +1,3 @@
-@import 'variables';
-@import 'resources';
-
 @mixin bitmap-border($border-url, $image-slice, $image-width, $border-radius) {
   border-image: $border-url !important;
   border-image-slice: $image-slice !important;
