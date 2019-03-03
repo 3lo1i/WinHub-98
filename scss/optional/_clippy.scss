@@ -28,3 +28,7 @@
 .js-notice:not(.js-repository-recommendation):not(summary) {
   @extend %clippy;
 }
+
+.create-account-callout {
+  @extend %clippy;
+}

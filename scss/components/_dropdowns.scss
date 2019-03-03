@@ -44,6 +44,7 @@
   @include border-bottom-separator;
 }
 
+.dropdown-menu h4,
 .dropdown-header {
   @include text-disabled;
 }
@@ -55,7 +56,29 @@
 .dropdown-menu {
   padding: 5px !important;
 
-  background-color: $color-window-background;
+  & > ul {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin: 0 !important;
+    font-size: 14px !important;
+    line-height: 1 !important;
+    & > li > a {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+      color: $color-text !important;
+    }
+  }
+
+  & > span, & > ul > li, & > a, & > div, & > h4 {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    margin: 0 !important;
+    line-height: 1 !important;
+  }
+
+  background-color: $color-window-background !important;
 
   &::before {
     display: none;
@@ -63,6 +86,10 @@
 
   &::after {
     display: none;
+  }
+
+  .border-lg-top {
+    @include border-top-separator;
   }
 }
 
@@ -85,6 +112,10 @@
 .jump-to-suggestions-results-container [aria-selected="true"] .jump-to-suggestions-path,
 .jump-to-suggestions-results-container .navigation-focus .jump-to-suggestions-path,
 .select-menu-item:hover,
+.dropdown-menu > a:hover,
+.dropdown-menu > a:hover.selected,
+.dropdown-menu li:hover,
+.dropdown-menu li:hover.selected,
 .select-menu-item:hover.selected,
 .select-menu-item:hover.select-menu-action,
 .select-menu-item:hover .description-inline,
@@ -103,6 +134,10 @@
 {
   color: $color-highlight-text !important;
   background: $color-highlight !important;
+
+  a {
+    color: $color-highlight-text !important;
+  }
 }
 
 .jump-to-suggestions {
@@ -122,3 +157,5 @@
 #jump-to-results {
   border: none !important;
 }
+
+

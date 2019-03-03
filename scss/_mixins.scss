@@ -141,7 +141,7 @@
 
 @mixin reset-text-styles {
   font-weight: normal !important;
-  font-size: inherit !important;
+  font-size: 14px !important;
   opacity: 1 !important;
   text-decoration: none !important;
   color: $color-text !important;
@@ -149,7 +149,7 @@
 
 @mixin text-disabled {
   font-weight: normal !important;
-  font-size: inherit !important;
+  font-size: 14px !important;
   opacity: 1 !important;
   text-decoration: none !important;
   color: $color-text-disabled !important;
@@ -157,7 +157,8 @@
 }
 
 @mixin reset-borders {
-  outine: none !important;
+  box-shadow: none;
+  outline: none !important;
   border-top-width: 0 !important;
   border-bottom-width: 0 !important;
   border-left-width: 0 !important;

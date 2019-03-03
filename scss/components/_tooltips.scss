@@ -9,6 +9,8 @@ body > div.Popover {
 .tooltipped::after,
 .Popover-message,
 .flash,
+.Tile,
+.create-account-callout,
 .js-notice:not(.js-repository-recommendation):not(summary) {
   @include tooltip;
 }

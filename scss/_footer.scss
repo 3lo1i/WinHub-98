@@ -8,25 +8,77 @@
     margin: 0 !important;
   }
 
+  & > div > div  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+    /* GitHub logo */
+    & > div:first-child {
+      text-align: center;
+      justify-content: center;
+      align-self: center;
+      flex-grow: 5;
+      width: auto;
+    }
+    
+    /* Columns */
+    & > div:not(:first-child) {
+      @include window;
+
+      margin: 0 5px !important;
+
+      h2 {
+        @include window-header;
+        margin: 3px 3px 0 3px !important;
+        padding: 0 10px;
+        font-family: sans-serif !important;
+        font-weight: bold !important;
+      }
+
+      padding-left: 0 !important;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+  }
+
   & > ul {
     @include statusbar;
-    padding: 0 5px !important;
+    padding: 0 !important;
     margin: 2px;
   }
 
   & > div:nth-child(1) {
     padding: 0 !important;
     border: none !important;
-    justify-content: stretch !important;
+    max-width: 100%;
+    padding: 0 10px !important;
 
     ul {
       @include statusbar;
-      padding: 0 5px !important;
-      margin: 2px;
+      margin: 2px 3px 3px 3px;
 
       &:nth-child(1) {
         flex-grow: 1;
       }
+    }
+
+    li {
+      margin-bottom: 0 !important;
+      padding: 4px 10px;
+      &:hover {
+        a {
+          color: $color-highlight-text !important;
+        }
+        background: $color-highlight !important;
+      }
+    }
+
+    li:not(:last-child) {
+      @include border-bottom-separator;
     }
   }
 
